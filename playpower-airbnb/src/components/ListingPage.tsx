@@ -2,13 +2,19 @@ import { asset, galleryAsset, heroIds, photoById } from "../data/photos";
 import { amenities, features, nearby, reviews } from "../data/listing";
 import { Icon, Laurel } from "./Icon";
 import { Calendar } from "./Calendar";
+import type { DateRange } from "./Calendar";
+import { useState } from "react";
 
 type Props = { onOpenTour: (photoId?: string) => void };
 function OutlineButton({ children }: { children: React.ReactNode }) {
   return <button className="outline-button">{children}</button>;
 }
 
-function BookingCard() {
+function BookingCard({ range, onChange }: { range: DateRange; onChange: (range: DateRange) => void }) {
+  const [guests, setGuests] = useState(2);
+  const displayDate = (key: string | null) =>
+    key ? new Date(Number(key.slice(0, 4)), Number(key.slice(5, 7)) - 1, Number(key.slice(8, 10))).toLocaleDateString("en-US") : "Add date";
+  const scrollToDates = () => document.getElementById("dates")?.scrollIntoView({ behavior: "smooth", block: "center" });
   return (
     <aside className="booking-column" aria-label="Stay details">
       <div className="offer">
@@ -28,29 +34,27 @@ function BookingCard() {
           for 5 nights
         </div>
         <div className="booking-fields">
-          <div>
+          <button type="button" className="booking-date" aria-label="Choose check-in date" onClick={scrollToDates}>
             <b>CHECK-IN</b>
-            <span>10/18/2026</span>
-          </div>
-          <div>
+            <span>{displayDate(range.checkIn)}</span>
+          </button>
+          <button type="button" className="booking-date" aria-label="Choose checkout date" onClick={scrollToDates}>
             <b>CHECKOUT</b>
-            <span>10/23/2026</span>
-          </div>
-          <label>
+            <span>{displayDate(range.checkOut)}</span>
+          </button>
+          <div className="booking-guests">
             <b>GUESTS</b>
-            <select aria-label="Number of guests" defaultValue="2">
-              <option value="1">1 guest</option>
-              <option value="2">2 guests</option>
-              <option value="3">3 guests</option>
-            </select>
-          </label>
+            <div className="guest-counter">
+              <button type="button" aria-label="Remove guest" disabled={guests <= 1} onClick={() => setGuests(g => Math.max(1, g - 1))}>−</button>
+              <span aria-live="polite">{guests} {guests === 1 ? "guest" : "guests"}</span>
+              <button type="button" aria-label="Add guest" disabled={guests >= 3} onClick={() => setGuests(g => Math.min(3, g + 1))}>+</button>
+            </div>
+          </div>
         </div>
         <p className="cancellation">
           Free cancellation before <strong>17 October</strong>
         </p>
-        <a className="reserve" href="#dates">
-          Reserve
-        </a>
+        <button type="button" className="reserve" onClick={scrollToDates}>Reserve</button>
         <p className="no-charge">You won't be charged yet</p>
       </div>
       <button className="report">
@@ -349,6 +353,7 @@ function PoliciesAndNearby() {
 }
 
 export function ListingPage({ onOpenTour }: Props) {
+  const [range, setRange] = useState<DateRange>({ checkIn: null, checkOut: null });
   return (
     <main id="listing" className="page-width listing-page">
       <div className="hero-grid">
@@ -469,9 +474,9 @@ export function ListingPage({ onOpenTour }: Props) {
             </div>
             <OutlineButton>Show all 50 amenities</OutlineButton>
           </section>
-          <Calendar />
+          <Calendar range={range} onChange={setRange} />
         </div>
-        <BookingCard />
+        <BookingCard range={range} onChange={setRange} />
       </div>
       <Reviews />
       <Location />
