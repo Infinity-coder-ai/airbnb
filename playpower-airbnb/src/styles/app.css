@@ -503,15 +503,29 @@ svg {
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
 }
-.booking-fields > div {
+.booking-fields > .booking-date {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+}
+.booking-fields > .booking-date:first-child {
+  border-right: 1px solid #bbb;
+}
+.booking-fields > .booking-date:hover { background: #f7f7f7; }
+.booking-fields > .booking-guests {
+  border-top: 1px solid #bbb;
+  grid-column: span 2;
   padding: 10px 12px;
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-.booking-fields > div:first-child {
-  border-right: 1px solid #bbb;
-}
+.guest-counter { display: flex; align-items: center; gap: 12px; justify-content: space-between; }
+.guest-counter button { width: 28px; height: 28px; border: 1px solid #aaa; border-radius: 50%; font-size: 18px; }
+.guest-counter button:disabled { opacity: .35; }
+.guest-counter span { flex: 1; text-align: center; }
 .booking-fields b {
   font-size: 9px;
   letter-spacing: 0.3px;
@@ -544,6 +558,7 @@ svg {
 }
 .reserve {
   display: block;
+  width: 100%;
   background: linear-gradient(100deg, #ed1951, #df006f);
   border-radius: 28px;
   text-align: center;
@@ -632,6 +647,7 @@ svg {
   background: #f2f2f2;
 }
 .day.unavailable {
+  cursor: not-allowed;
   color: #d5d5d5;
   text-decoration: line-through;
 }
@@ -1511,4 +1527,10 @@ svg {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* The supplied DevTools measurements show 26px Arial for the listing title
+   and 22px Arial for the details heading; both are specified above. */
+@media (prefers-reduced-motion: reduce) {
+  .booking-date, .reserve { scroll-behavior: auto; transition: none; }
 }
