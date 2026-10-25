@@ -1,0 +1,529 @@
+[
+  {
+    "id": "terrace-front",
+    "file": "src/assets/reference/terrace-front.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 320,
+      "top": 348,
+      "width": 1120,
+      "height": 988
+    },
+    "width": 1120,
+    "height": 988,
+    "bytes": 941426,
+    "sha256": "d59b94ac1ce69f5135ed2ad49bad29d5d995e80ea9d0df2660f4af6858c44eba",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "terrace-side",
+    "file": "src/assets/reference/terrace-side.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1456,
+      "top": 348,
+      "width": 544,
+      "height": 484
+    },
+    "width": 544,
+    "height": 484,
+    "bytes": 285218,
+    "sha256": "6e09ef6b6cf4d55184da96065a5617d8b1d2753d03702df41421167456ec2de9",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "jacuzzi",
+    "file": "src/assets/reference/jacuzzi.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 2016,
+      "top": 348,
+      "width": 544,
+      "height": 484
+    },
+    "width": 544,
+    "height": 484,
+    "bytes": 279588,
+    "sha256": "15be6c119547f97eaef4d7776234e549f6f8afe23496344e46c74b070fdec6a7",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "bedroom",
+    "file": "src/assets/reference/bedroom.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 320,
+      "top": 3112,
+      "width": 636,
+      "height": 422
+    },
+    "width": 636,
+    "height": 422,
+    "bytes": 314016,
+    "sha256": "714079c3e5a22eeaab6bd877116c77e9e40d6bf060a4e71fe410fdd5b85ee752",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "bedroom-hero",
+    "file": "src/assets/reference/bedroom-hero.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1456,
+      "top": 848,
+      "width": 544,
+      "height": 488
+    },
+    "width": 544,
+    "height": 488,
+    "bytes": 301526,
+    "sha256": "2823a46b4bb82bb7bbce27962ace4def930e21ea0ffc6263d87ccbf812cf43a6",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "exterior",
+    "file": "src/assets/reference/exterior.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 2016,
+      "top": 848,
+      "width": 544,
+      "height": 488
+    },
+    "width": 544,
+    "height": 488,
+    "bytes": 286558,
+    "sha256": "9079b6957ca1f2a74b76363475e3288153bb4f23477299124da56f518a992553",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "living-01",
+    "file": "src/assets/reference/living-01.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1000.png",
+    "sourceSha256": "9295d30ccaf3ed0bbfaa33e44893b2a768baa5d8d9c03bfa984d72402bc5c00d",
+    "crop": {
+      "left": 472,
+      "top": 176,
+      "width": 1936,
+      "height": 1452
+    },
+    "width": 1936,
+    "height": 1452,
+    "bytes": 2438252,
+    "sha256": "75096bdb5932e08bbfa97f903191b1c3754690561e49880845ed9d2e24e8f25d",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "living-02",
+    "file": "src/assets/reference/living-02.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 1502,
+      "top": 1800,
+      "width": 444,
+      "height": 296
+    },
+    "width": 444,
+    "height": 296,
+    "bytes": 155960,
+    "sha256": "1b3a71a89423887f9938e634827c186fc9b9d737cc9b2cb558c169775c462e5f",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "living-03",
+    "file": "src/assets/reference/living-03.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 1970,
+      "top": 1800,
+      "width": 446,
+      "height": 296
+    },
+    "width": 446,
+    "height": 296,
+    "bytes": 156624,
+    "sha256": "c84c3ed629a779296f6558005f86960f065227e67127b0b6f9551cd82aaae871",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "kitchen",
+    "file": "src/assets/reference/kitchen.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 958,
+      "top": 468,
+      "width": 224,
+      "height": 208
+    },
+    "width": 224,
+    "height": 208,
+    "bytes": 54282,
+    "sha256": "e8682084308dceeb49ffe7ae79858542f81883ad35a4caafdc2704a533d3c6b6",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "bathroom",
+    "file": "src/assets/reference/bathroom.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 1454,
+      "top": 468,
+      "width": 222,
+      "height": 208
+    },
+    "width": 222,
+    "height": 208,
+    "bytes": 60734,
+    "sha256": "b3249b4b12c57cdf8d0916dc0cf8b94d5092196e03ac8a600bb679f5bda9ffc9",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "gym",
+    "file": "src/assets/reference/gym.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 1700,
+      "top": 468,
+      "width": 222,
+      "height": 208
+    },
+    "width": 222,
+    "height": 208,
+    "bytes": 54274,
+    "sha256": "3282429691b431c76cb9ec91cc28145d48ea5d9564e4fae71edcb2c509aecca2",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "exterior-aerial",
+    "file": "src/assets/reference/exterior-aerial.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 1946,
+      "top": 468,
+      "width": 224,
+      "height": 208
+    },
+    "width": 224,
+    "height": 208,
+    "bytes": 92614,
+    "sha256": "7d577edf9d644fdcd1ee2e62d99fd0d3ac0304199927888cfdd6554fb0b1339c",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "pool",
+    "file": "src/assets/reference/pool.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 2194,
+      "top": 468,
+      "width": 222,
+      "height": 208
+    },
+    "width": 222,
+    "height": 208,
+    "bytes": 62736,
+    "sha256": "c0ba0b8a7c2a79541251bd8cbaa1eccd13d28c91c62ee4096023243d9e51fb9e",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "additional",
+    "file": "src/assets/reference/additional.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+    "sourceSha256": "dd85efb2605b7c771dc03fcad127a30096ddc8d97d54129d48c573f19681f4d8",
+    "crop": {
+      "left": 464,
+      "top": 754,
+      "width": 222,
+      "height": 208
+    },
+    "width": 222,
+    "height": 208,
+    "bytes": 67958,
+    "sha256": "4deb37e06be6aa23735cd490b59e3c254c17bc9d04119783b29c969b764409cb",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "host",
+    "file": "src/assets/reference/host.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 472,
+      "top": 10120,
+      "width": 176,
+      "height": 176
+    },
+    "width": 176,
+    "height": 176,
+    "bytes": 14136,
+    "sha256": "92385eb022c071bebe900503f9fc23d4ef532b77feef4e519bfe4dd3b92e7e9b",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "aheesh",
+    "file": "src/assets/reference/aheesh.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1520,
+      "top": 6702,
+      "width": 86,
+      "height": 86
+    },
+    "width": 86,
+    "height": 86,
+    "bytes": 10054,
+    "sha256": "6e753ed2bc696f92b561e67f6f1146be1e67d549cb102095cdd82704e5e68a21",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "samiksha",
+    "file": "src/assets/reference/samiksha.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 320,
+      "top": 7176,
+      "width": 86,
+      "height": 86
+    },
+    "width": 86,
+    "height": 86,
+    "bytes": 11854,
+    "sha256": "6b33d29d31e38acbcdbc88a5e5d952046d7411cd3e06a2e0b93f8dc8b2e92526",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "vaibhav",
+    "file": "src/assets/reference/vaibhav.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 320,
+      "top": 7650,
+      "width": 86,
+      "height": 86
+    },
+    "width": 86,
+    "height": 86,
+    "bytes": 8356,
+    "sha256": "4f2a9b1b51f04339fdb61e10fe3b3c3b588e0ace149b12788aeb161e0dc1d1f9",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "mohd",
+    "file": "src/assets/reference/mohd.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1520,
+      "top": 7650,
+      "width": 86,
+      "height": 86
+    },
+    "width": 86,
+    "height": 86,
+    "bytes": 7900,
+    "sha256": "e0f75e760cb64a7afd749fcbd7792aa50c3b6e4786bfbc53a300b3e7a10826a9",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-sharath",
+    "file": "src/assets/reference/cohost-sharath.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1096,
+      "top": 10142,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 6028,
+    "sha256": "809964d014223709a496554297f017e8530397df30b0340e28869069c4907996",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-aman",
+    "file": "src/assets/reference/cohost-aman.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1588,
+      "top": 10142,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 5812,
+    "sha256": "7b1fa0a9fed4d54561f63006268034e1c787c62fef977962f0eb570c97d732a2",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-maria",
+    "file": "src/assets/reference/cohost-maria.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 2084,
+      "top": 10142,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 6658,
+    "sha256": "021ef70bcde55447958ed09c390a2f4d077c8671d454801256fa1caa7e437a65",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-simran",
+    "file": "src/assets/reference/cohost-simran.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1096,
+      "top": 10242,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 5788,
+    "sha256": "ba2c0e571faeb6ad59c1ca622d3550363d518f18a6a616b88539c2b4c4e16b4b",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-pallavi",
+    "file": "src/assets/reference/cohost-pallavi.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1588,
+      "top": 10242,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 7148,
+    "sha256": "28c10240a2cf91e911d7dd29d78a6c37e9e68afebf16101a006692a918a77f18",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "cohost-sanyukta",
+    "file": "src/assets/reference/cohost-sanyukta.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 2084,
+      "top": 10242,
+      "width": 68,
+      "height": 68
+    },
+    "width": 68,
+    "height": 68,
+    "bytes": 8150,
+    "sha256": "9e28e83eb5bce2841faf6979c22cfde677c33e4fe00f96463dcfc81eeac4c90c",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "nearby-01",
+    "file": "src/assets/reference/nearby-01.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 320,
+      "top": 11852,
+      "width": 416,
+      "height": 414
+    },
+    "width": 416,
+    "height": 414,
+    "bytes": 147016,
+    "sha256": "d2fb590cf4c272ed42fc6626ef1ae1f68f94bd9165ab16605a9e6012fd48cb92",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "nearby-02",
+    "file": "src/assets/reference/nearby-02.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 776,
+      "top": 11852,
+      "width": 416,
+      "height": 414
+    },
+    "width": 416,
+    "height": 414,
+    "bytes": 157258,
+    "sha256": "b8a2f531eac8e9a305866e3fd0f69f1c4fa021fb3129ef25aaef172303bf583d",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "nearby-03",
+    "file": "src/assets/reference/nearby-03.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1232,
+      "top": 11852,
+      "width": 416,
+      "height": 414
+    },
+    "width": 416,
+    "height": 414,
+    "bytes": 131788,
+    "sha256": "78914036cbfca66a3767978aea82242af54f0d58db1c7e6f6f0f18fa256d6ce4",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "nearby-04",
+    "file": "src/assets/reference/nearby-04.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 1688,
+      "top": 11852,
+      "width": 416,
+      "height": 414
+    },
+    "width": 416,
+    "height": 414,
+    "bytes": 163590,
+    "sha256": "d2315d62dbc59ccd6bd52ef95751aca6d016c39a3809f6d40fbe22d936be30cc",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  },
+  {
+    "id": "nearby-05",
+    "file": "src/assets/reference/nearby-05.webp",
+    "source": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+    "sourceSha256": "15515eb8621be06b006503f0bdc3f21900d5221f5e3083f3ada2823d5018ceba",
+    "crop": {
+      "left": 2144,
+      "top": 11852,
+      "width": 416,
+      "height": 414
+    },
+    "width": 416,
+    "height": 414,
+    "bytes": 135844,
+    "sha256": "7025b960bf7b3936daa36b8721dd08fbf841f4f51ccf184eef9bb31d6a148845",
+    "status": "user-screenshot-derived; lossless WebP; original media URL unavailable"
+  }
+]

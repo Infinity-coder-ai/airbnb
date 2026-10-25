@@ -1,0 +1,1995 @@
+{
+  "baseline": false,
+  "at": "2026-10-25T16:14:34.875Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "dpr": 1
+  },
+  "formula": "CSS scale = min(box/intrinsic) for contain; max for cover. DPR 2 requirement = CSS scale * 2. Painted dimensions are not the fixed img element box.",
+  "errors": [],
+  "assets": [
+    {
+      "id": "additional",
+      "path": "src/assets/reference/additional.webp",
+      "intrinsicWidth": 222,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0673076923076923,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "additional",
+          "path": "src/assets/reference/additional.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 232,
+            "y": 376,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 222,
+            "height": 208
+          },
+          "painted": {
+            "width": 111.5,
+            "height": 104.46846846846846
+          },
+          "cssUpscale": 0.5022522522522522,
+          "requiredScaleAtDpr2": 1.0045045045045045
+        }
+      ],
+      "maximumCssUpscale": 0.5022522522522522,
+      "maximumScaleAtDpr2": 1.0045045045045045,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "aheesh",
+      "path": "src/assets/reference/aheesh.webp",
+      "intrinsicWidth": 86,
+      "intrinsicHeight": 86,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "aheesh",
+          "path": "src/assets/reference/aheesh.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 760,
+            "y": 3355,
+            "width": 43,
+            "height": 43
+          },
+          "natural": {
+            "width": 86,
+            "height": 86
+          },
+          "painted": {
+            "width": 43,
+            "height": 43
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "bathroom",
+      "path": "src/assets/reference/bathroom.webp",
+      "intrinsicWidth": 222,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0673076923076923,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "bathroom",
+          "path": "src/assets/reference/bathroom.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 726,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 222,
+            "height": 208
+          },
+          "painted": {
+            "width": 111.5,
+            "height": 104.46846846846846
+          },
+          "cssUpscale": 0.5022522522522522,
+          "requiredScaleAtDpr2": 1.0045045045045045
+        }
+      ],
+      "maximumCssUpscale": 0.5022522522522522,
+      "maximumScaleAtDpr2": 1.0045045045045045,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "bedroom-hero",
+      "path": "src/assets/reference/bedroom-hero.webp",
+      "intrinsicWidth": 544,
+      "intrinsicHeight": 488,
+      "aspectRatio": 1.1147540983606556,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "bedroom",
+      "path": "src/assets/reference/bedroom.webp",
+      "intrinsicWidth": 636,
+      "intrinsicHeight": 422,
+      "aspectRatio": 1.5071090047393365,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "bedroom",
+          "path": "src/assets/reference/bedroom.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 602.5,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 636,
+            "height": 422
+          },
+          "painted": {
+            "width": 156.739336492891,
+            "height": 104
+          },
+          "cssUpscale": 0.24644549763033174,
+          "requiredScaleAtDpr2": 0.4928909952606635
+        }
+      ],
+      "maximumCssUpscale": 0.24644549763033174,
+      "maximumScaleAtDpr2": 0.4928909952606635,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-aman",
+      "path": "src/assets/reference/cohost-aman.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-aman",
+          "path": "src/assets/reference/cohost-aman.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 797.328125,
+            "y": 5067,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-maria",
+      "path": "src/assets/reference/cohost-maria.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-maria",
+          "path": "src/assets/reference/cohost-maria.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1046.65625,
+            "y": 5067,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-pallavi",
+      "path": "src/assets/reference/cohost-pallavi.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-pallavi",
+          "path": "src/assets/reference/cohost-pallavi.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 797.328125,
+            "y": 5117,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-sanyukta",
+      "path": "src/assets/reference/cohost-sanyukta.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-sanyukta",
+          "path": "src/assets/reference/cohost-sanyukta.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1046.65625,
+            "y": 5117,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-sharath",
+      "path": "src/assets/reference/cohost-sharath.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-sharath",
+          "path": "src/assets/reference/cohost-sharath.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 548,
+            "y": 5067,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "cohost-simran",
+      "path": "src/assets/reference/cohost-simran.webp",
+      "intrinsicWidth": 68,
+      "intrinsicHeight": 68,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "cohost-simran",
+          "path": "src/assets/reference/cohost-simran.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 548,
+            "y": 5117,
+            "width": 34,
+            "height": 34
+          },
+          "natural": {
+            "width": 68,
+            "height": 68
+          },
+          "painted": {
+            "width": 34,
+            "height": 34
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "exterior-aerial",
+      "path": "src/assets/reference/exterior-aerial.webp",
+      "intrinsicWidth": 224,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0769230769230769,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "exterior-aerial",
+          "path": "src/assets/reference/exterior-aerial.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 973,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 224,
+            "height": 208
+          },
+          "painted": {
+            "width": 112,
+            "height": 104
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "exterior",
+      "path": "src/assets/reference/exterior.webp",
+      "intrinsicWidth": 544,
+      "intrinsicHeight": 488,
+      "aspectRatio": 1.1147540983606556,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "gym",
+      "path": "src/assets/reference/gym.webp",
+      "intrinsicWidth": 222,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0673076923076923,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "gym",
+          "path": "src/assets/reference/gym.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 849.5,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 222,
+            "height": 208
+          },
+          "painted": {
+            "width": 111.5,
+            "height": 104.46846846846846
+          },
+          "cssUpscale": 0.5022522522522522,
+          "requiredScaleAtDpr2": 1.0045045045045045
+        }
+      ],
+      "maximumCssUpscale": 0.5022522522522522,
+      "maximumScaleAtDpr2": 1.0045045045045045,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "host",
+      "path": "src/assets/reference/host.webp",
+      "intrinsicWidth": 176,
+      "intrinsicHeight": 176,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "host",
+          "path": "src/assets/reference/host.webp",
+          "alt": "",
+          "objectFit": "fill",
+          "elementBox": {
+            "x": 160,
+            "y": 913.5,
+            "width": 46,
+            "height": 46
+          },
+          "natural": {
+            "width": 176,
+            "height": 176
+          },
+          "painted": {
+            "width": 46,
+            "height": 46
+          },
+          "cssUpscale": 0.26136363636363635,
+          "requiredScaleAtDpr2": 0.5227272727272727
+        },
+        {
+          "view": "Listing",
+          "id": "host",
+          "path": "src/assets/reference/host.webp",
+          "alt": "Mirashya Homes logo",
+          "objectFit": "fill",
+          "elementBox": {
+            "x": 222.359375,
+            "y": 5058,
+            "width": 88,
+            "height": 88
+          },
+          "natural": {
+            "width": 176,
+            "height": 176
+          },
+          "painted": {
+            "width": 88,
+            "height": 88
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "jacuzzi",
+      "path": "src/assets/reference/jacuzzi.webp",
+      "intrinsicWidth": 544,
+      "intrinsicHeight": 484,
+      "aspectRatio": 1.1239669421487604,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "kitchen",
+      "path": "src/assets/reference/kitchen.webp",
+      "intrinsicWidth": 224,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0769230769230769,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "kitchen",
+          "path": "src/assets/reference/kitchen.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 479,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 224,
+            "height": 208
+          },
+          "painted": {
+            "width": 112,
+            "height": 104
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "living-01",
+      "path": "src/assets/reference/living-01.webp",
+      "intrinsicWidth": 1936,
+      "intrinsicHeight": 1452,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "living-01",
+          "path": "src/assets/reference/living-01.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 232,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 1936,
+            "height": 1452
+          },
+          "painted": {
+            "width": 138.66666666666666,
+            "height": 104
+          },
+          "cssUpscale": 0.07162534435261708,
+          "requiredScaleAtDpr2": 0.14325068870523416
+        }
+      ],
+      "maximumCssUpscale": 0.07162534435261708,
+      "maximumScaleAtDpr2": 0.14325068870523416,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "living-02",
+      "path": "src/assets/reference/living-02.webp",
+      "intrinsicWidth": 444,
+      "intrinsicHeight": 296,
+      "aspectRatio": 1.5,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "living-03",
+      "path": "src/assets/reference/living-03.webp",
+      "intrinsicWidth": 446,
+      "intrinsicHeight": 296,
+      "aspectRatio": 1.5067567567567568,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "mohd",
+      "path": "src/assets/reference/mohd.webp",
+      "intrinsicWidth": 86,
+      "intrinsicHeight": 86,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "mohd",
+          "path": "src/assets/reference/mohd.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 760,
+            "y": 3808,
+            "width": 43,
+            "height": 43
+          },
+          "natural": {
+            "width": 86,
+            "height": 86
+          },
+          "painted": {
+            "width": 43,
+            "height": 43
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "nearby-01",
+      "path": "src/assets/reference/nearby-01.webp",
+      "intrinsicWidth": 416,
+      "intrinsicHeight": 414,
+      "aspectRatio": 1.0048309178743962,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "nearby-01",
+          "path": "src/assets/reference/nearby-01.webp",
+          "alt": "Beautiful Studio with a view to die for",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 160,
+            "y": 5930,
+            "width": 208,
+            "height": 208
+          },
+          "natural": {
+            "width": 416,
+            "height": 414
+          },
+          "painted": {
+            "width": 209.00483091787441,
+            "height": 208
+          },
+          "cssUpscale": 0.5024154589371981,
+          "requiredScaleAtDpr2": 1.0048309178743962
+        }
+      ],
+      "maximumCssUpscale": 0.5024154589371981,
+      "maximumScaleAtDpr2": 1.0048309178743962,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "nearby-02",
+      "path": "src/assets/reference/nearby-02.webp",
+      "intrinsicWidth": 416,
+      "intrinsicHeight": 414,
+      "aspectRatio": 1.0048309178743962,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "nearby-02",
+          "path": "src/assets/reference/nearby-02.webp",
+          "alt": "NAQAB - 1bhk with private pool",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 388,
+            "y": 5930,
+            "width": 208,
+            "height": 208
+          },
+          "natural": {
+            "width": 416,
+            "height": 414
+          },
+          "painted": {
+            "width": 209.00483091787441,
+            "height": 208
+          },
+          "cssUpscale": 0.5024154589371981,
+          "requiredScaleAtDpr2": 1.0048309178743962
+        }
+      ],
+      "maximumCssUpscale": 0.5024154589371981,
+      "maximumScaleAtDpr2": 1.0048309178743962,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "nearby-03",
+      "path": "src/assets/reference/nearby-03.webp",
+      "intrinsicWidth": 416,
+      "intrinsicHeight": 414,
+      "aspectRatio": 1.0048309178743962,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "nearby-03",
+          "path": "src/assets/reference/nearby-03.webp",
+          "alt": "Greentique Luxury Flat with plunge pool, Calangute",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 616,
+            "y": 5930,
+            "width": 208,
+            "height": 208
+          },
+          "natural": {
+            "width": 416,
+            "height": 414
+          },
+          "painted": {
+            "width": 209.00483091787441,
+            "height": 208
+          },
+          "cssUpscale": 0.5024154589371981,
+          "requiredScaleAtDpr2": 1.0048309178743962
+        }
+      ],
+      "maximumCssUpscale": 0.5024154589371981,
+      "maximumScaleAtDpr2": 1.0048309178743962,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "nearby-04",
+      "path": "src/assets/reference/nearby-04.webp",
+      "intrinsicWidth": 416,
+      "intrinsicHeight": 414,
+      "aspectRatio": 1.0048309178743962,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "nearby-04",
+          "path": "src/assets/reference/nearby-04.webp",
+          "alt": "The Tropical Studio | 5 mins to Beach",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 844,
+            "y": 5930,
+            "width": 208,
+            "height": 208
+          },
+          "natural": {
+            "width": 416,
+            "height": 414
+          },
+          "painted": {
+            "width": 209.00483091787441,
+            "height": 208
+          },
+          "cssUpscale": 0.5024154589371981,
+          "requiredScaleAtDpr2": 1.0048309178743962
+        }
+      ],
+      "maximumCssUpscale": 0.5024154589371981,
+      "maximumScaleAtDpr2": 1.0048309178743962,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "nearby-05",
+      "path": "src/assets/reference/nearby-05.webp",
+      "intrinsicWidth": 416,
+      "intrinsicHeight": 414,
+      "aspectRatio": 1.0048309178743962,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "nearby-05",
+          "path": "src/assets/reference/nearby-05.webp",
+          "alt": "Luxury Casa Bella 1BHK with plunge pool, Calangute",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1072,
+            "y": 5930,
+            "width": 208,
+            "height": 208
+          },
+          "natural": {
+            "width": 416,
+            "height": 414
+          },
+          "painted": {
+            "width": 209.00483091787441,
+            "height": 208
+          },
+          "cssUpscale": 0.5024154589371981,
+          "requiredScaleAtDpr2": 1.0048309178743962
+        }
+      ],
+      "maximumCssUpscale": 0.5024154589371981,
+      "maximumScaleAtDpr2": 1.0048309178743962,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "pool",
+      "path": "src/assets/reference/pool.webp",
+      "intrinsicWidth": 222,
+      "intrinsicHeight": 208,
+      "aspectRatio": 1.0673076923076923,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "pool",
+          "path": "src/assets/reference/pool.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1096.5,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 222,
+            "height": 208
+          },
+          "painted": {
+            "width": 111.5,
+            "height": 104.46846846846846
+          },
+          "cssUpscale": 0.5022522522522522,
+          "requiredScaleAtDpr2": 1.0045045045045045
+        }
+      ],
+      "maximumCssUpscale": 0.5022522522522522,
+      "maximumScaleAtDpr2": 1.0045045045045045,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "additional",
+      "path": "src/assets/reference/public/additional.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "additional",
+          "path": "src/assets/reference/public/additional.jpg",
+          "alt": "Terrace chairs and hot tub beneath the wall lights",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 4302,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "additional",
+          "path": "src/assets/reference/public/additional.jpg",
+          "alt": "Terrace chairs and hot tub beneath the wall lights",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "bathroom",
+      "path": "src/assets/reference/public/bathroom.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "bathroom",
+          "path": "src/assets/reference/public/bathroom.jpg",
+          "alt": "Bathroom with stone tiles, round mirror and shower",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 2522,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "bathroom",
+          "path": "src/assets/reference/public/bathroom.jpg",
+          "alt": "Bathroom with stone tiles, round mirror and shower",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "bedroom",
+      "path": "src/assets/reference/public/bedroom.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "bedroom",
+          "path": "src/assets/reference/public/bedroom.jpg",
+          "alt": "Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 728.15625,
+            "y": 425,
+            "width": 271.921875,
+            "height": 243
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 324,
+            "height": 243
+          },
+          "cssUpscale": 0.1265625,
+          "requiredScaleAtDpr2": 0.253125
+        },
+        {
+          "view": "Listing",
+          "id": "bedroom",
+          "path": "src/assets/reference/public/bedroom.jpg",
+          "alt": "Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 160,
+            "y": 1556,
+            "width": 318,
+            "height": 211
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 318,
+            "height": 238.5
+          },
+          "cssUpscale": 0.12421875,
+          "requiredScaleAtDpr2": 0.2484375
+        },
+        {
+          "view": "Tour",
+          "id": "bedroom",
+          "path": "src/assets/reference/public/bedroom.jpg",
+          "alt": "Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 2117,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "bedroom",
+          "path": "src/assets/reference/public/bedroom.jpg",
+          "alt": "Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "exterior-aerial",
+      "path": "src/assets/reference/public/exterior-aerial.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1437,
+      "aspectRatio": 1.7814892136395268,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "exterior-aerial",
+          "path": "src/assets/reference/public/exterior-aerial.jpg",
+          "alt": "Aerial view of the apartment building and surrounding greenery",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 3332,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1437
+          },
+          "painted": {
+            "width": 545.1356993736952,
+            "height": 306
+          },
+          "cssUpscale": 0.21294363256784968,
+          "requiredScaleAtDpr2": 0.42588726513569936
+        },
+        {
+          "view": "Lightbox",
+          "id": "exterior-aerial",
+          "path": "src/assets/reference/public/exterior-aerial.jpg",
+          "alt": "Aerial view of the apartment building and surrounding greenery",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1437
+          },
+          "painted": {
+            "width": 1280,
+            "height": 718.5
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "exterior",
+      "path": "src/assets/reference/public/exterior.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1437,
+      "aspectRatio": 1.7814892136395268,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "exterior",
+          "path": "src/assets/reference/public/exterior.jpg",
+          "alt": "Apartment building with cream walls, balconies and a red roof",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1008.078125,
+            "y": 425,
+            "width": 271.90625,
+            "height": 243
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1437
+          },
+          "painted": {
+            "width": 432.901878914405,
+            "height": 243
+          },
+          "cssUpscale": 0.16910229645093947,
+          "requiredScaleAtDpr2": 0.33820459290187893
+        },
+        {
+          "view": "Tour",
+          "id": "exterior",
+          "path": "src/assets/reference/public/exterior.jpg",
+          "alt": "Apartment building with cream walls, balconies and a red roof",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 3650,
+            "width": 223,
+            "height": 148
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1437
+          },
+          "painted": {
+            "width": 263.66040361865,
+            "height": 148
+          },
+          "cssUpscale": 0.10299234516353514,
+          "requiredScaleAtDpr2": 0.20598469032707029
+        },
+        {
+          "view": "Lightbox",
+          "id": "exterior",
+          "path": "src/assets/reference/public/exterior.jpg",
+          "alt": "Apartment building with cream walls, balconies and a red roof",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1437
+          },
+          "painted": {
+            "width": 1280,
+            "height": 718.5
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "gym",
+      "path": "src/assets/reference/public/gym.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "gym",
+          "path": "src/assets/reference/public/gym.jpg",
+          "alt": "Gym with an exercise bike, treadmill and dumbbells",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 2927,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "gym",
+          "path": "src/assets/reference/public/gym.jpg",
+          "alt": "Gym with an exercise bike, treadmill and dumbbells",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "jacuzzi",
+      "path": "src/assets/reference/public/jacuzzi.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "jacuzzi",
+          "path": "src/assets/reference/public/jacuzzi.jpg",
+          "alt": "White jacuzzi in a wooden surround on the terrace",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 1008.078125,
+            "y": 174,
+            "width": 271.90625,
+            "height": 243
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 324,
+            "height": 243
+          },
+          "cssUpscale": 0.1265625,
+          "requiredScaleAtDpr2": 0.253125
+        },
+        {
+          "view": "Tour",
+          "id": "jacuzzi",
+          "path": "src/assets/reference/public/jacuzzi.jpg",
+          "alt": "White jacuzzi in a wooden surround on the terrace",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 4620,
+            "width": 223,
+            "height": 148
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 223,
+            "height": 167.25
+          },
+          "cssUpscale": 0.087109375,
+          "requiredScaleAtDpr2": 0.17421875
+        },
+        {
+          "view": "Lightbox",
+          "id": "jacuzzi",
+          "path": "src/assets/reference/public/jacuzzi.jpg",
+          "alt": "White jacuzzi in a wooden surround on the terrace",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "kitchen",
+      "path": "src/assets/reference/public/kitchen.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "kitchen",
+          "path": "src/assets/reference/public/kitchen.jpg",
+          "alt": "Wooden kitchen cabinets, black countertop and tiled backsplash",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 1712,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "kitchen",
+          "path": "src/assets/reference/public/kitchen.jpg",
+          "alt": "Wooden kitchen cabinets, black countertop and tiled backsplash",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "living-01",
+      "path": "src/assets/reference/public/living-01.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "living-01",
+          "path": "src/assets/reference/public/living-01.jpg",
+          "alt": "Living room with a mustard sofa, wooden coffee table, dining area and kitchen",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 494,
+            "y": 1556,
+            "width": 318,
+            "height": 211
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 318,
+            "height": 238.5
+          },
+          "cssUpscale": 0.12421875,
+          "requiredScaleAtDpr2": 0.2484375
+        },
+        {
+          "view": "Tour",
+          "id": "living-01",
+          "path": "src/assets/reference/public/living-01.jpg",
+          "alt": "Living room with a mustard sofa, wooden coffee table, dining area and kitchen",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 747.2520141601562,
+            "y": 580.1640014648438,
+            "width": 463.49603271484375,
+            "height": 309.6719970703125
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 463.49603271484375,
+            "height": 347.6220245361328
+          },
+          "cssUpscale": 0.18105313777923585,
+          "requiredScaleAtDpr2": 0.3621062755584717
+        },
+        {
+          "view": "Lightbox",
+          "id": "living-01",
+          "path": "src/assets/reference/public/living-01.jpg",
+          "alt": "Living room with a mustard sofa, wooden coffee table, dining area and kitchen",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "living-02",
+      "path": "src/assets/reference/public/living-02.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "living-02",
+          "path": "src/assets/reference/public/living-02.jpg",
+          "alt": "Living room looking toward the television cabinet and kitchen",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 900,
+            "width": 223,
+            "height": 148
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 223,
+            "height": 167.25
+          },
+          "cssUpscale": 0.087109375,
+          "requiredScaleAtDpr2": 0.17421875
+        },
+        {
+          "view": "Lightbox",
+          "id": "living-02",
+          "path": "src/assets/reference/public/living-02.jpg",
+          "alt": "Living room looking toward the television cabinet and kitchen",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "living-03",
+      "path": "src/assets/reference/public/living-03.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "living-03",
+          "path": "src/assets/reference/public/living-03.jpg",
+          "alt": "Another view of the sofa, coffee table and television in the living room",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 985,
+            "y": 900,
+            "width": 223,
+            "height": 148
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 223,
+            "height": 167.25
+          },
+          "cssUpscale": 0.087109375,
+          "requiredScaleAtDpr2": 0.17421875
+        },
+        {
+          "view": "Lightbox",
+          "id": "living-03",
+          "path": "src/assets/reference/public/living-03.jpg",
+          "alt": "Another view of the sofa, coffee table and television in the living room",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "pool",
+      "path": "src/assets/reference/public/pool.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "pool",
+          "path": "src/assets/reference/public/pool.jpg",
+          "alt": "Swimming pool in the apartment courtyard",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 3897,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "pool",
+          "path": "src/assets/reference/public/pool.jpg",
+          "alt": "Swimming pool in the apartment courtyard",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "terrace-front",
+      "path": "src/assets/reference/public/terrace-front.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "terrace-front",
+          "path": "src/assets/reference/public/terrace-front.jpg",
+          "alt": "Terrace seating with woven chairs, white cushions, plants and wall lights",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 160,
+            "y": 174,
+            "width": 560.15625,
+            "height": 494
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 658.6666666666666,
+            "height": 493.99999999999994
+          },
+          "cssUpscale": 0.25729166666666664,
+          "requiredScaleAtDpr2": 0.5145833333333333
+        },
+        {
+          "view": "Tour",
+          "id": "terrace-front",
+          "path": "src/assets/reference/public/terrace-front.jpg",
+          "alt": "Terrace seating with woven chairs, white cushions, plants and wall lights",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 1147,
+            "width": 458,
+            "height": 306
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 458,
+            "height": 343.5
+          },
+          "cssUpscale": 0.17890625,
+          "requiredScaleAtDpr2": 0.3578125
+        },
+        {
+          "view": "Lightbox",
+          "id": "terrace-front",
+          "path": "src/assets/reference/public/terrace-front.jpg",
+          "alt": "Terrace seating with woven chairs, white cushions, plants and wall lights",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "terrace-side",
+      "path": "src/assets/reference/public/terrace-side.jpg",
+      "intrinsicWidth": 2560,
+      "intrinsicHeight": 1920,
+      "aspectRatio": 1.3333333333333333,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "terrace-side",
+          "path": "src/assets/reference/public/terrace-side.jpg",
+          "alt": "Side view of the terrace seating beside the hot tub",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 728.15625,
+            "y": 174,
+            "width": 271.921875,
+            "height": 243
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 324,
+            "height": 243
+          },
+          "cssUpscale": 0.1265625,
+          "requiredScaleAtDpr2": 0.253125
+        },
+        {
+          "view": "Tour",
+          "id": "terrace-side",
+          "path": "src/assets/reference/public/terrace-side.jpg",
+          "alt": "Side view of the terrace seating beside the hot tub",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 750,
+            "y": 1465,
+            "width": 223,
+            "height": 148
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 223,
+            "height": 167.25
+          },
+          "cssUpscale": 0.087109375,
+          "requiredScaleAtDpr2": 0.17421875
+        },
+        {
+          "view": "Lightbox",
+          "id": "terrace-side",
+          "path": "src/assets/reference/public/terrace-side.jpg",
+          "alt": "Side view of the terrace seating beside the hot tub",
+          "objectFit": "contain",
+          "elementBox": {
+            "x": 80,
+            "y": 88,
+            "width": 1280,
+            "height": 726
+          },
+          "natural": {
+            "width": 2560,
+            "height": 1920
+          },
+          "painted": {
+            "width": 968,
+            "height": 726
+          },
+          "cssUpscale": 0.378125,
+          "requiredScaleAtDpr2": 0.75625
+        }
+      ],
+      "maximumCssUpscale": 0.378125,
+      "maximumScaleAtDpr2": 0.75625,
+      "largestUse": "Lightbox",
+      "appearanceAssessment": "No pixel upscaling at DPR 1 or 2; direct matched public JPEG, no sharpening or re-encoding"
+    },
+    {
+      "id": "samiksha",
+      "path": "src/assets/reference/samiksha.webp",
+      "intrinsicWidth": 86,
+      "intrinsicHeight": 86,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "samiksha",
+          "path": "src/assets/reference/samiksha.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 160,
+            "y": 3571,
+            "width": 43,
+            "height": 43
+          },
+          "natural": {
+            "width": 86,
+            "height": 86
+          },
+          "painted": {
+            "width": 43,
+            "height": 43
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "terrace-front",
+      "path": "src/assets/reference/terrace-front.webp",
+      "intrinsicWidth": 1120,
+      "intrinsicHeight": 988,
+      "aspectRatio": 1.1336032388663968,
+      "placements": [],
+      "maximumCssUpscale": null,
+      "maximumScaleAtDpr2": null,
+      "largestUse": "unused",
+      "appearanceAssessment": "Archived screenshot crop, no longer rendered; missing detail would remain if enlarged"
+    },
+    {
+      "id": "terrace-side",
+      "path": "src/assets/reference/terrace-side.webp",
+      "intrinsicWidth": 544,
+      "intrinsicHeight": 484,
+      "aspectRatio": 1.1239669421487604,
+      "placements": [
+        {
+          "view": "Tour",
+          "id": "terrace-side",
+          "path": "src/assets/reference/terrace-side.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 355.5,
+            "y": 234,
+            "width": 111.5,
+            "height": 104
+          },
+          "natural": {
+            "width": 544,
+            "height": 484
+          },
+          "painted": {
+            "width": 116.89256198347108,
+            "height": 104
+          },
+          "cssUpscale": 0.21487603305785125,
+          "requiredScaleAtDpr2": 0.4297520661157025
+        }
+      ],
+      "maximumCssUpscale": 0.21487603305785125,
+      "maximumScaleAtDpr2": 0.4297520661157025,
+      "largestUse": "Tour",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    },
+    {
+      "id": "vaibhav",
+      "path": "src/assets/reference/vaibhav.webp",
+      "intrinsicWidth": 86,
+      "intrinsicHeight": 86,
+      "aspectRatio": 1,
+      "placements": [
+        {
+          "view": "Listing",
+          "id": "vaibhav",
+          "path": "src/assets/reference/vaibhav.webp",
+          "alt": "",
+          "objectFit": "cover",
+          "elementBox": {
+            "x": 160,
+            "y": 3808,
+            "width": 43,
+            "height": 43
+          },
+          "natural": {
+            "width": 86,
+            "height": 86
+          },
+          "painted": {
+            "width": 43,
+            "height": 43
+          },
+          "cssUpscale": 0.5,
+          "requiredScaleAtDpr2": 1
+        }
+      ],
+      "maximumCssUpscale": 0.5,
+      "maximumScaleAtDpr2": 1,
+      "largestUse": "Listing",
+      "appearanceAssessment": "No additional pixel upscaling at DPR 1 or 2; baked screenshot softness can remain"
+    }
+  ]
+}

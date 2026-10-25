@@ -1,0 +1,40 @@
+{
+  "comparisons": [
+    {
+      "file": "comparison-listing-top.png",
+      "left": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+      "right": "listing-top.png",
+      "referenceHeight": 900,
+      "localHeight": 900,
+      "normalization": "reference resized to 1440px wide; no masks; full-page heights not stretched"
+    },
+    {
+      "file": "comparison-listing-full.png",
+      "left": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1006.png",
+      "right": "listing-full.png",
+      "referenceHeight": 6256,
+      "localHeight": 6256,
+      "normalization": "reference resized to 1440px wide; no masks; full-page heights not stretched"
+    },
+    {
+      "file": "comparison-tour-top.png",
+      "left": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE (1).png",
+      "right": "tour-top.png",
+      "referenceHeight": 900,
+      "localHeight": 900,
+      "normalization": "reference resized to 1440px wide; no masks; full-page heights not stretched"
+    },
+    {
+      "file": "comparison-lightbox-first.png",
+      "left": "airbnb-clone-umber-two.vercel.app__utm_source=chatgpt.com&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1000.png",
+      "right": "lightbox-first.png",
+      "referenceHeight": 900,
+      "localHeight": 900,
+      "normalization": "reference resized to 1440px wide; no masks; full-page heights not stretched"
+    }
+  ],
+  "pixelIdenticalReferenceCrops": 31,
+  "byteVerifiedPublicPhotos": 14,
+  "noMasks": true,
+  "note": "Side-by-side evidence, not a pixel-perfect or global similarity claim."
+}

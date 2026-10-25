@@ -1,0 +1,1459 @@
+{
+  "checks": [
+    "all 14 actual images decode; stable image canvas, toolbar, arrows, close and counter; contain without ratio distortion",
+    "first, middle and last navigation verified by buttons and arrow keys in both directions; boundary clamping retained",
+    "fixed frame/control rectangles across every photo; zero unexpected Lightbox CLS (input-driven label text changes reported separately)",
+    "test-only 600x1200 portrait raster retains 1:2 ratio and full height with letterboxing; same controls and canvas; no portrait inserted into production data",
+    "no broken actual images or browser runtime/HTTP errors"
+  ],
+  "states": [
+    {
+      "index": 1,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-01.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 2,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-02.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 3,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-03.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 4,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-front.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 5,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-side.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 6,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/kitchen.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 7,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/bedroom.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 8,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/bathroom.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 9,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/gym.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 10,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior-aerial.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1437
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 80,
+        "y": 91.75,
+        "width": 1280,
+        "height": 718.5
+      }
+    },
+    {
+      "index": 11,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1437
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 80,
+        "y": 91.75,
+        "width": 1280,
+        "height": 718.5
+      }
+    },
+    {
+      "index": 12,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/pool.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 13,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/additional.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 14,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/jacuzzi.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    }
+  ],
+  "shifts": [
+    {
+      "at": 1692.0999999046326,
+      "value": 0.00008128844628772292,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 1731.8999999761581,
+      "value": 0.00008599108367626887,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 1797.0999999046326,
+      "value": 0.00017685275607638888,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2032.5999999046326,
+      "value": 0.0003443002373756859,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2114.6999999284744,
+      "value": 0.00011965144488383059,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        },
+        {
+          "node": "#text",
+          "parent": "lightbox-counter",
+          "previous": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          },
+          "current": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2427.899999976158,
+      "value": 0.00012411603679055212,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2516.0999999046326,
+      "value": 0.0004877306777263375,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2857,
+      "value": 0.00036361464093578535,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2886.5999999046326,
+      "value": 0.00011965144488383059,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        },
+        {
+          "node": "#text",
+          "parent": "lightbox-counter",
+          "previous": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          },
+          "current": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2901.399999976158,
+      "value": 0.0003443002373756859,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2916.1999999284744,
+      "value": 0.00017685275607638888,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2931.2999999523163,
+      "value": 0.00008599108367626887,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2958.7999999523163,
+      "value": 0.00008128844628772292,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    }
+  ],
+  "portraitFixture": {
+    "boxes": {
+      ".lightbox-stage": {
+        "x": 80,
+        "y": 88,
+        "width": 1280,
+        "height": 726
+      },
+      ".lightbox-stage img": {
+        "x": 80,
+        "y": 88,
+        "width": 1280,
+        "height": 726
+      },
+      ".lightbox-toolbar": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "#lightbox-title": {
+        "x": 130,
+        "y": 27,
+        "width": 1180,
+        "height": 18
+      },
+      ".lightbox-arrow.previous": {
+        "x": 20,
+        "y": 430,
+        "width": 40,
+        "height": 40
+      },
+      ".lightbox-arrow.next": {
+        "x": 1380,
+        "y": 430,
+        "width": 40,
+        "height": 40
+      },
+      "#lightbox-close": {
+        "x": 1376,
+        "y": 16,
+        "width": 40,
+        "height": 40
+      },
+      ".lightbox-counter": {
+        "x": 1292,
+        "y": 28,
+        "width": 72,
+        "height": 16
+      }
+    },
+    "source": "http://127.0.0.1:5173/src/assets/reference/public/living-02.jpg",
+    "natural": {
+      "width": 600,
+      "height": 1200
+    },
+    "fit": "contain",
+    "painted": {
+      "x": 538.5,
+      "y": 88,
+      "width": 363,
+      "height": 726
+    },
+    "rasterPainted": {
+      "left": 539,
+      "top": 88,
+      "width": 363,
+      "height": 726,
+      "ratio": 0.5
+    }
+  },
+  "errors": []
+}
