@@ -10,7 +10,7 @@ function OutlineButton({ children }: { children: React.ReactNode }) {
   return <button className="outline-button">{children}</button>;
 }
 
-function BookingCard({ range, onChange }: { range: DateRange; onChange: (range: DateRange) => void }) {
+function BookingCard({ range }: { range: DateRange }) {
   const [guests, setGuests] = useState(2);
   const displayDate = (key: string | null) =>
     key ? new Date(Number(key.slice(0, 4)), Number(key.slice(5, 7)) - 1, Number(key.slice(8, 10))).toLocaleDateString("en-US") : "Add date";
@@ -476,7 +476,7 @@ export function ListingPage({ onOpenTour }: Props) {
           </section>
           <Calendar range={range} onChange={setRange} />
         </div>
-        <BookingCard range={range} onChange={setRange} />
+        <BookingCard range={range} />
       </div>
       <Reviews />
       <Location />
