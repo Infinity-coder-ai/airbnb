@@ -14,6 +14,12 @@ import { Calendar } from "./Calendar";
 
 type Props = { onOpenTour: (photoId?: string) => void };
 type ListingSection = "photos" | "amenities" | "reviews" | "location";
+const chipArtwork = import.meta.glob<string>(
+  "../assets/reference/chips/*.png",
+  { eager: true, query: "?url", import: "default" },
+);
+const chipAsset = (name: string) =>
+  chipArtwork[`../assets/reference/chips/${name}.png`];
 
 function StickySectionNav({
   visible,
@@ -239,17 +245,20 @@ function Reviews() {
         tabIndex={0}
       >
         {[
-          ["🛋️", "Comfort", "6"],
-          ["✅", "Accuracy", "5"],
-          ["🛁", "Hot tub", "5"],
-          ["🪣", "Condition", "4"],
-          ["🎁", "Hospitality", "8"],
-          ["🧴", "Cleanliness", "4"],
-          ["🧺", "Amenities", "2"],
-          ["🖼️", "Interior", "4"],
-        ].map(([emoji, name, count]) => (
+          ["comfort", "Comfort", "6"],
+          ["accuracy", "Accuracy", "5"],
+          ["hot-tub", "Hot tub", "5"],
+          ["condition", "Condition", "4"],
+          ["hospitality", "Hospitality", "8"],
+          ["cleanliness", "Cleanliness", "4"],
+          ["amenities", "Amenities", "2"],
+          ["decor", "Decor", "2"],
+          ["indoor-spaces", "Indoor spaces", "2"],
+          ["location", "Location", "2"],
+        ].map(([artwork, name, count]) => (
           <span key={name}>
-            {emoji} &nbsp;{name} <span className="muted">{count}</span>
+            <img src={chipAsset(artwork)} alt="" />
+            {name} <span className="muted">{count}</span>
           </span>
         ))}
       </div>

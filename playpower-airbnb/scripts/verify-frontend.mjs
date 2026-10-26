@@ -97,11 +97,11 @@ try {
     assert.equal(await bar.getAttribute("aria-hidden"), null);
     const box = await bar.boundingBox();
     assert.equal(box.y, 0);
-    assert.equal(box.height, 80);
+    assert.equal(box.height, 67);
     await capture("listing-sticky");
     await bar.getByRole("button", { name: "Amenities", exact: true }).click();
     await page.waitForTimeout(100);
-    assert(Math.abs((await page.locator("#amenities").boundingBox()).y - 80) <= 1);
+    assert(Math.abs((await page.locator("#amenities").boundingBox()).y - 67) <= 1);
   });
   await page.evaluate(() => scrollTo(0, 300));
   await page
@@ -129,7 +129,7 @@ try {
     assert.equal(await page.locator(".photo-tour .title-bar").count(), 0);
     const toolbar = await page.locator(".tour-toolbar").boundingBox();
     assert.equal(toolbar.y, 0);
-    assert.equal(toolbar.height, 72);
+    assert.equal(toolbar.height, 88);
   });
   measurements.tour = await page.locator("#group-living-1").boundingBox();
   await page.locator("#photo-living-01").click();
@@ -137,7 +137,7 @@ try {
     assert.equal(await page.getByRole("dialog").count(), 1);
     assert.equal(
       await page.locator(".lightbox-counter").innerText(),
-      "1 of 14",
+      "1 of 18",
     );
     assert(
       await page
@@ -168,28 +168,28 @@ try {
       };
     });
   await page.keyboard.press("ArrowLeft");
-  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 14");
+  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 18");
   await page.keyboard.press("ArrowRight");
   await check("ArrowRight advances and previous button returns", async () => {
     assert.equal(
       await page.locator(".lightbox-counter").innerText(),
-      "2 of 14",
+      "2 of 18",
     );
     await page
       .getByRole("button", { name: "Previous photo", exact: true })
       .click();
     assert.equal(
       await page.locator(".lightbox-counter").innerText(),
-      "1 of 14",
+      "1 of 18",
     );
   });
-  for (let i = 0; i < 13; i++) await page.keyboard.press("ArrowRight");
+  for (let i = 0; i < 17; i++) await page.keyboard.press("ArrowRight");
   await check(
     "last boundary is disabled and arrow navigation clamps",
     async () => {
       assert.equal(
         await page.locator(".lightbox-counter").innerText(),
-        "14 of 14",
+        "18 of 18",
       );
       assert(
         await page
@@ -199,7 +199,7 @@ try {
       await page.keyboard.press("ArrowRight");
       assert.equal(
         await page.locator(".lightbox-counter").innerText(),
-        "14 of 14",
+        "18 of 18",
       );
     },
   );
@@ -214,7 +214,7 @@ try {
       await page.keyboard.press("ArrowLeft");
       assert.equal(
         await page.locator(".lightbox-counter").innerText(),
-        "13 of 14",
+        "17 of 18",
       );
       await page.keyboard.press("ArrowRight");
     },
@@ -303,7 +303,7 @@ try {
     await page.keyboard.press("Shift+Tab");
     assert(
       await page
-        .locator("#photo-jacuzzi")
+        .locator("#photo-additional")
         .evaluate((element) => element === document.activeElement),
     );
     await page.keyboard.press("Tab");
@@ -338,7 +338,7 @@ try {
       await page.keyboard.press("Enter");
       assert.equal(
         await page.locator(".lightbox-counter").innerText(),
-        "1 of 14",
+        "1 of 18",
       );
       await page
         .getByRole("button", { name: "Return to photo tour", exact: true })

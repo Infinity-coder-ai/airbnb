@@ -1,5 +1,9 @@
 # Implementation plan
 
+## 2026-10-26 evidence-driven update
+
+The saved reference ZIP now supports direct local comparison. Implemented deltas include the verified 67px sliding section bar, exact 48px packaged search-house artwork, ten exact review-chip images, collapsed-description fade, no Listing chrome in Photo Tour, and four additional property photos in verified Living room 2 order. The gallery contains 18 real views. Reference navigation has 43 items, so the remaining 25 stay absent until legitimate originals are supplied.
+
 ## Amenities and expandable content — 26 October 2026
 
 The Listing now owns the description-expanded and amenities-open state. A native modal dialog provides browser-level modal semantics and background inertness; its internal scroll surface holds the12 supplied groups and44 verified rows. Body scrolling is locked while open, and both Escape and the close button restore the amenities opener without moving the Listing. `data/listing.ts` is the single source for the full verified amenity list. The reference label remains “Show all50amenities”; missing rows are not fabricated.

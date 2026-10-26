@@ -14,6 +14,21 @@ export function PhotoTour({
   onClose: () => void;
   onOpen: (id: string) => void;
 }) {
+  const rowsFor = (groupId: string) => {
+    const groupPhotos = photos.filter((photo) => photo.group === groupId);
+    const rows: typeof groupPhotos[] = [];
+    for (let index = 0; index < groupPhotos.length; ) {
+      const photo = groupPhotos[index];
+      if (photo.wide) {
+        rows.push([photo]);
+        index += 1;
+      } else {
+        rows.push(groupPhotos.slice(index, index + 2));
+        index += 2;
+      }
+    }
+    return rows;
+  };
   return (
     <div
       className={`photo-tour ${hidden ? "covered" : ""}`}
@@ -75,14 +90,16 @@ export function PhotoTour({
                 {group.details && <p>{group.details}</p>}
               </div>
               <div className="group-photos">
-                {photos
-                  .filter((photo) => photo.group === group.id)
-                  .map((photo, index) => (
+                {rowsFor(group.id).map((row, rowIndex) => (
+                  <div
+                    className={`photo-row ${row.length === 1 && row[0].wide ? "wide" : "pair"}`}
+                    key={`${group.id}-row-${rowIndex}`}
+                  >
+                    {row.map((photo) => (
                     <button
                       key={photo.id}
-                      className={index === 0 ? "group-primary" : ""}
                       id={`photo-${photo.id}`}
-                      aria-label={`Open ${group.title} photo ${index + 1}`}
+                      aria-label={`Open ${group.title} photo ${photos.filter((item) => item.group === group.id).indexOf(photo) + 1}`}
                       onClick={() => onOpen(photo.id)}
                     >
                       <img
@@ -91,7 +108,9 @@ export function PhotoTour({
                         loading={group.id === "living-1" ? "eager" : "lazy"}
                       />
                     </button>
-                  ))}
+                    ))}
+                  </div>
+                ))}
               </div>
             </section>
           ))}

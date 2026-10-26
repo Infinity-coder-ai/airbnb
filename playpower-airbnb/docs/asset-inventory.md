@@ -1,5 +1,13 @@
 # Asset inventory — current screenshot-derived assets
 
+## 2026-10-26 ZIP additions
+
+The saved reference contains 17 property JPEGs at 1440px width, exact 240×216 search-house artwork, ten 120×120 review-chip images, two laurel images, and reference avatars. Its nominal `AirbnbCerealVF.woff2` entry is only an 87-byte `No Content` placeholder and was not installed as a font.
+
+Four non-duplicate property photos were copied without re-encoding to `src/assets/reference/public/living-04.jpg` through `living-07.jpg`. Pixel signatures show the other 13 packaged files correspond to existing higher-resolution clean matches. The available gallery is now 18 images; the reference proves 43 total, leaving 25 unavailable originals. No duplicate filler or unrelated photo was introduced.
+
+The exact packaged `searchbar-house.png` now replaces the earlier reconstruction at `src/assets/reference/search-home.png`. All ten packaged review-chip PNGs are under `src/assets/reference/chips/` and replace system-dependent emoji.
+
 ## Search-home icon update — 26 October 2026
 
 `src/assets/reference/search-home.png` is a128×115 transparent PNG derived from the user's newly supplied house artwork through the built-in image editing workflow, then losslessly PNG-compressed for the31.59×30.4px header placement. The edit request preserved the house, roof, red door, windows, greenery, path, circular lighting and proportions while removing only surrounding background pixels. It replaces the temporary code-drawn SVG and avoids system emoji variation. The generated extraction is a close visual derivative rather than a byte-identical crop because the chat image was not exposed as a local source file. It is used only for the search-home placement and is not presented as a reference-site original download.

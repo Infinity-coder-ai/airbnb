@@ -22,7 +22,7 @@ try {
     assert.match(await page.locator('.booking-fields').innerText(), /10\/18\/2026/);
     assert.match(await page.locator('.booking-fields').innerText(), /10\/23\/2026/);
     assert.equal(await page.locator('.search-home img').getAttribute('alt'), '');
-    assert.equal(await page.locator('.search-home img').evaluate(image => image.naturalWidth), 128);
+    assert.equal(await page.locator('.search-home img').evaluate(image => image.naturalWidth), 240);
     assert.equal(await page.locator('h1').evaluate(e => getComputedStyle(e).fontSize), '26px');
     assert.equal(await page.locator('.intro h2').evaluate(e => getComputedStyle(e).fontSize), '22px');
   });
@@ -30,7 +30,7 @@ try {
     const url = page.url();
     await date('Reserve').click();
     assert.equal(page.url(), url);
-    assert.equal(await page.locator('#dates').evaluate(e => Math.round(e.getBoundingClientRect().top)), 80);
+    assert.equal(await page.locator('#dates').evaluate(e => Math.round(e.getBoundingClientRect().top)), 67);
     assert.equal(await page.evaluate(() => document.activeElement.id), 'dates-heading');
     await capture('local-reserve-calendar');
   });
@@ -120,7 +120,7 @@ try {
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     await reload();
     await date('Reserve').click();
-    await page.waitForFunction(() => Math.abs(document.getElementById('dates').getBoundingClientRect().top - 80) < 2);
+    await page.waitForFunction(() => Math.abs(document.getElementById('dates').getBoundingClientRect().top - 67) < 2);
     assert.equal(await page.evaluate(() => document.activeElement.id), 'dates-heading');
   });
   await check('no runtime, console or HTTP asset errors', async () => assert.deepEqual(errors, []));

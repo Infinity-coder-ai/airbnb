@@ -1,6 +1,6 @@
 {
   "checks": [
-    "all 14 actual images decode; stable image canvas, toolbar, arrows, close and counter; contain without ratio distortion",
+    "all 18 available reference images decode; stable image canvas, toolbar, arrows, close and counter; contain without ratio distortion",
     "first, middle and last navigation verified by buttons and arrow keys in both directions; boundary clamping retained",
     "fixed frame/control rectangles across every photo; zero unexpected Lightbox CLS (input-driven label text changes reported separately)",
     "test-only 600x1200 portrait raster retains 1:2 ratio and full height with letterboxing; same controls and canvas; no portrait inserted into production data",
@@ -254,7 +254,7 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-front.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-side.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -319,7 +319,7 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-side.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/jacuzzi.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -384,17 +384,17 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/kitchen.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-04.jpg",
       "natural": {
-        "width": 2560,
-        "height": 1920
+        "width": 1440,
+        "height": 1080
       },
       "fit": "contain",
       "painted": {
-        "x": 236,
-        "y": 88,
-        "width": 968,
-        "height": 726
+        "x": 235.99999999999994,
+        "y": 87.99999999999994,
+        "width": 968.0000000000001,
+        "height": 726.0000000000001
       }
     },
     {
@@ -449,7 +449,7 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/bedroom.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/terrace-front.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -514,17 +514,17 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/bathroom.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-05.jpg",
       "natural": {
-        "width": 2560,
-        "height": 1920
+        "width": 1440,
+        "height": 1080
       },
       "fit": "contain",
       "painted": {
-        "x": 236,
-        "y": 88,
-        "width": 968,
-        "height": 726
+        "x": 235.99999999999994,
+        "y": 87.99999999999994,
+        "width": 968.0000000000001,
+        "height": 726.0000000000001
       }
     },
     {
@@ -579,17 +579,17 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/gym.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-06.jpg",
       "natural": {
-        "width": 2560,
-        "height": 1920
+        "width": 1440,
+        "height": 1080
       },
       "fit": "contain",
       "painted": {
-        "x": 236,
-        "y": 88,
-        "width": 968,
-        "height": 726
+        "x": 235.99999999999994,
+        "y": 87.99999999999994,
+        "width": 968.0000000000001,
+        "height": 726.0000000000001
       }
     },
     {
@@ -644,17 +644,17 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior-aerial.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/living-07.jpg",
       "natural": {
-        "width": 2560,
-        "height": 1437
+        "width": 1440,
+        "height": 1080
       },
       "fit": "contain",
       "painted": {
-        "x": 80,
-        "y": 91.75,
-        "width": 1280,
-        "height": 718.5
+        "x": 235.99999999999994,
+        "y": 87.99999999999994,
+        "width": 968.0000000000001,
+        "height": 726.0000000000001
       }
     },
     {
@@ -709,17 +709,17 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/kitchen.jpg",
       "natural": {
         "width": 2560,
-        "height": 1437
+        "height": 1920
       },
       "fit": "contain",
       "painted": {
-        "x": 80,
-        "y": 91.75,
-        "width": 1280,
-        "height": 718.5
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
       }
     },
     {
@@ -774,7 +774,7 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/pool.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/bedroom.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -839,7 +839,7 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/additional.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/bathroom.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -904,7 +904,267 @@
           "height": 16
         }
       },
-      "source": "http://127.0.0.1:5173/src/assets/reference/public/jacuzzi.jpg",
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/gym.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 15,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior-aerial.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1437
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 80,
+        "y": 91.75,
+        "width": 1280,
+        "height": 718.5
+      }
+    },
+    {
+      "index": 16,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/exterior.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1437
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 80,
+        "y": 91.75,
+        "width": 1280,
+        "height": 718.5
+      }
+    },
+    {
+      "index": 17,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/pool.jpg",
+      "natural": {
+        "width": 2560,
+        "height": 1920
+      },
+      "fit": "contain",
+      "painted": {
+        "x": 236,
+        "y": 88,
+        "width": 968,
+        "height": 726
+      }
+    },
+    {
+      "index": 18,
+      "boxes": {
+        ".lightbox-stage": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-stage img": {
+          "x": 80,
+          "y": 88,
+          "width": 1280,
+          "height": 726
+        },
+        ".lightbox-toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 72
+        },
+        "#lightbox-title": {
+          "x": 130,
+          "y": 27,
+          "width": 1180,
+          "height": 18
+        },
+        ".lightbox-arrow.previous": {
+          "x": 20,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-arrow.next": {
+          "x": 1380,
+          "y": 430,
+          "width": 40,
+          "height": 40
+        },
+        "#lightbox-close": {
+          "x": 1376,
+          "y": 16,
+          "width": 40,
+          "height": 40
+        },
+        ".lightbox-counter": {
+          "x": 1292,
+          "y": 28,
+          "width": 72,
+          "height": 16
+        }
+      },
+      "source": "http://127.0.0.1:5173/src/assets/reference/public/additional.jpg",
       "natural": {
         "width": 2560,
         "height": 1920
@@ -920,7 +1180,39 @@
   ],
   "shifts": [
     {
-      "at": 1672.7999999998137,
+      "at": 2041.300000000745,
+      "value": 0.0000048032407407407405,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-counter",
+          "previous": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          },
+          "current": {
+            "x": 1292,
+            "y": 28,
+            "width": 72.421875,
+            "height": 16,
+            "top": 28,
+            "right": 1364.421875,
+            "bottom": 44,
+            "left": 1292
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2095.89999999851,
       "value": 0.00008128844628772292,
       "hadRecentInput": true,
       "sources": [
@@ -952,7 +1244,7 @@
       "lightbox": true
     },
     {
-      "at": 1708.5,
+      "at": 2293.699999999255,
       "value": 0.00008599108367626887,
       "hadRecentInput": true,
       "sources": [
@@ -984,7 +1276,7 @@
       "lightbox": true
     },
     {
-      "at": 1774.6999999997206,
+      "at": 2367.800000000745,
       "value": 0.00017685275607638888,
       "hadRecentInput": true,
       "sources": [
@@ -1016,7 +1308,7 @@
       "lightbox": true
     },
     {
-      "at": 2019.0999999996275,
+      "at": 2462.5,
       "value": 0.0003443002373756859,
       "hadRecentInput": true,
       "sources": [
@@ -1048,8 +1340,296 @@
       "lightbox": true
     },
     {
-      "at": 2108.5999999996275,
-      "value": 0.00011965144488383059,
+      "at": 2511.800000000745,
+      "value": 0.00011471076201346022,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2647.60000000149,
+      "value": 0.00012411603679055212,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2703.10000000149,
+      "value": 0.0004877306777263375,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2933,
+      "value": 0.0004877306777263375,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2946.699999999255,
+      "value": 0.00012411603679055212,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2976.10000000149,
+      "value": 0.00011471076201346022,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2990.5,
+      "value": 0.0003443002373756859,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 3005,
+      "value": 0.00017685275607638888,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 3019.800000000745,
+      "value": 0.00008599108367626887,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 3080.5,
+      "value": 0.00008724219553755144,
       "hadRecentInput": true,
       "sources": [
         {
@@ -1098,318 +1678,6 @@
             "right": 1364.421875,
             "bottom": 44,
             "left": 1292
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2402.6999999997206,
-      "value": 0.00012411603679055212,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2491.7999999998137,
-      "value": 0.0004877306777263375,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2850.399999999907,
-      "value": 0.0004877306777263375,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2865.6999999997206,
-      "value": 0.00012411603679055212,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2894.899999999907,
-      "value": 0.00011965144488383059,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        },
-        {
-          "node": "#text",
-          "parent": "lightbox-counter",
-          "previous": {
-            "x": 1292,
-            "y": 28,
-            "width": 72.421875,
-            "height": 16,
-            "top": 28,
-            "right": 1364.421875,
-            "bottom": 44,
-            "left": 1292
-          },
-          "current": {
-            "x": 1292,
-            "y": 28,
-            "width": 72.421875,
-            "height": 16,
-            "top": 28,
-            "right": 1364.421875,
-            "bottom": 44,
-            "left": 1292
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2910.1999999997206,
-      "value": 0.0003443002373756859,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2927.1999999997206,
-      "value": 0.00017685275607638888,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2943.1999999997206,
-      "value": 0.00008599108367626887,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          }
-        }
-      ],
-      "lightbox": true
-    },
-    {
-      "at": 2958.5,
-      "value": 0.00008128844628772292,
-      "hadRecentInput": true,
-      "sources": [
-        {
-          "node": "#text",
-          "parent": "lightbox-title",
-          "previous": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
-          },
-          "current": {
-            "x": 130,
-            "y": 27,
-            "width": 1180,
-            "height": 17,
-            "top": 27,
-            "right": 1310,
-            "bottom": 44,
-            "left": 130
           }
         }
       ],

@@ -1,5 +1,15 @@
 # Reference analysis - supplied screenshots
 
+## 2026-10-26 saved-reference audit
+
+The user supplied `airbnb_clone_umber_two.vercel.app.zip`. It is a saved production response, not the original development repository. It was served unchanged on localhost and inspected in Chromium at **1440×900 CSS px, DPR 1**. The implementation did not copy its HTML, CSS, JavaScript, or obfuscated application bundle. Rendered behavior, rectangles, visible text, and packaged public raster assets were used as reference evidence.
+
+New verified captures and the machine-readable audit are in [`reference-captures/zip-reference`](../reference-captures/zip-reference/): `listing-top.png`, `listing-sticky.png`, `tour-top.png`, `lightbox-first.png`, and `audit.json`. They verify Listing bounds x160–1280; hero x160,y174,width1120,height494; a 67px fixed section bar; a Photo Tour without Listing chrome; and a Lightbox counter of `1 of 43` whose first image is approximately x237,y88,width965,height724.
+
+The ZIP packages 17 distinct 1440px property files. Four were not in the previous local collection and are now included in verified Living room 2 order. Together with the existing clean public matches and the exterior view absent from the ZIP, the implementation has 18 verified property views. The other 25 originals remain unavailable; direct public asset requests return HTTP 429. The saved snapshot itself has missing resources, including one hero image, so its broken-image states were not reproduced.
+
+Tour motion was subsequently measured frame-by-frame against the locally served snapshot. Both implementations apply wheel deltas immediately. The reference category jump uses native smooth scrolling and settles at 2228px for Bedroom in roughly 800ms. The Tour enters from 28px below with opacity 0 over 300ms using `cubic-bezier(.2,0,0,1)`. Its toolbar is 88px and its 900px-viewport scroller is 812px. The local implementation now uses those values, the same eight-column navigation, 1024px outer gallery container, 60px section-column gap, sticky room headings, and the reference full-width/pair photo-row pattern. The comparison samples are saved in [`tour-scroll-comparison.json`](../implementation-captures/tour-scroll-comparison.json).
+
 Reference: https://airbnb-clone-umber-two.vercel.app
 
 Updated 2026-10-26 (Asia/Calcutta).

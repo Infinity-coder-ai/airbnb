@@ -93,7 +93,7 @@ try {
   await page.evaluate(() => {
     window.__qualityStart = performance.now();
   });
-  for (let index = 0; index < 14; index++) {
+  for (let index = 0; index < 18; index++) {
     const state = await geometry(page);
     assert.deepEqual(
       state.boxes,
@@ -113,12 +113,12 @@ try {
     );
     assert.equal(
       await page.locator(".lightbox-counter").innerText(),
-      `${index + 1} of 14`,
+      `${index + 1} of 18`,
     );
     states.push({ index: index + 1, ...state });
-    if ([0, 7, 10, 13].includes(index))
+    if ([0, 7, 10, 17].includes(index))
       await page.screenshot({ path: `${output}/image-${index + 1}.png` });
-    if (index < 13) {
+    if (index < 17) {
       if (index % 2 === 0)
         await page
           .getByRole("button", { name: "Next photo", exact: true })
@@ -127,7 +127,7 @@ try {
     }
   }
   checks.push(
-    "all 14 actual images decode; stable image canvas, toolbar, arrows, close and counter; contain without ratio distortion",
+    "all 18 available reference images decode; stable image canvas, toolbar, arrows, close and counter; contain without ratio distortion",
   );
   assert(
     await page
@@ -135,10 +135,10 @@ try {
       .isDisabled(),
   );
   await page.keyboard.press("ArrowRight");
-  assert.equal(await page.locator(".lightbox-counter").innerText(), "14 of 14");
-  for (let index = 13; index > 0; index--)
+  assert.equal(await page.locator(".lightbox-counter").innerText(), "18 of 18");
+  for (let index = 17; index > 0; index--)
     await page.keyboard.press("ArrowLeft");
-  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 14");
+  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 18");
   assert(
     await page
       .getByRole("button", { name: "Previous photo", exact: true })
@@ -148,7 +148,7 @@ try {
   await page
     .getByRole("button", { name: "Previous photo", exact: true })
     .click();
-  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 14");
+  assert.equal(await page.locator(".lightbox-counter").innerText(), "1 of 18");
   checks.push(
     "first, middle and last navigation verified by buttons and arrow keys in both directions; boundary clamping retained",
   );

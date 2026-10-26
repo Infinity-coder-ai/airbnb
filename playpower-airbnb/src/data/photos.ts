@@ -24,7 +24,7 @@ export function asset(id: string) {
   return source;
 }
 
-export type Photo = { id: string; group: string; alt: string };
+export type Photo = { id: string; group: string; alt: string; wide?: boolean };
 export const groups = [
   {
     id: "living-1",
@@ -66,6 +66,7 @@ export const photos: Photo[] = [
     id: "living-01",
     group: "living-1",
     alt: "Living room with a mustard sofa, wooden coffee table, dining area and kitchen",
+    wide: true,
   },
   {
     id: "living-02",
@@ -78,14 +79,42 @@ export const photos: Photo[] = [
     alt: "Another view of the sofa, coffee table and television in the living room",
   },
   {
-    id: "terrace-front",
-    group: "living-2",
-    alt: "Terrace seating with woven chairs, white cushions, plants and wall lights",
-  },
-  {
     id: "terrace-side",
     group: "living-2",
     alt: "Side view of the terrace seating beside the hot tub",
+    wide: true,
+  },
+  {
+    id: "jacuzzi",
+    group: "living-2",
+    alt: "White jacuzzi in a wooden surround on the terrace",
+  },
+  {
+    id: "living-04",
+    group: "living-2",
+    alt: "Living room 2",
+  },
+  {
+    id: "terrace-front",
+    group: "living-2",
+    alt: "Terrace seating with woven chairs, white cushions, plants and wall lights",
+    wide: true,
+  },
+  {
+    id: "living-05",
+    group: "living-2",
+    alt: "Living room 2",
+  },
+  {
+    id: "living-06",
+    group: "living-2",
+    alt: "Living room 2",
+  },
+  {
+    id: "living-07",
+    group: "living-2",
+    alt: "Living room 2",
+    wide: true,
   },
   {
     id: "kitchen",
@@ -96,21 +125,25 @@ export const photos: Photo[] = [
     id: "bedroom",
     group: "bedroom",
     alt: "Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+    wide: true,
   },
   {
     id: "bathroom",
     group: "bathroom",
     alt: "Bathroom with stone tiles, round mirror and shower",
+    wide: true,
   },
   {
     id: "gym",
     group: "gym",
     alt: "Gym with an exercise bike, treadmill and dumbbells",
+    wide: true,
   },
   {
     id: "exterior-aerial",
     group: "exterior",
     alt: "Aerial view of the apartment building and surrounding greenery",
+    wide: true,
   },
   {
     id: "exterior",
@@ -121,16 +154,13 @@ export const photos: Photo[] = [
     id: "pool",
     group: "pool",
     alt: "Swimming pool in the apartment courtyard",
+    wide: true,
   },
   {
     id: "additional",
     group: "additional",
     alt: "Terrace chairs and hot tub beneath the wall lights",
-  },
-  {
-    id: "jacuzzi",
-    group: "additional",
-    alt: "White jacuzzi in a wooden surround on the terrace",
+    wide: true,
   },
 ];
 export const heroIds = [

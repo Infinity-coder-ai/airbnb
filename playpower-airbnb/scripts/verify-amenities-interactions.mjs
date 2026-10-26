@@ -47,12 +47,12 @@ try {
         .evaluate(
           (image) =>
             image.complete &&
-            image.naturalWidth === 128 &&
-            image.naturalHeight === 115,
+            image.naturalWidth === 240 &&
+            image.naturalHeight === 216,
         ),
     );
-    assert(Math.abs(result.width - 31.59) < 0.02);
-    assert(Math.abs(result.height - 30.4) < 0.02);
+    assert.equal(result.width, 48);
+    assert.equal(result.height, 48);
   });
   await page.screenshot({
     path: `${output}/header-house.png`,
@@ -224,7 +224,7 @@ try {
       overflowX: getComputedStyle(element).overflowX,
       count: element.children.length,
     }));
-    assert.equal(metrics.count, 8);
+    assert.equal(metrics.count, 10);
     assert(metrics.scrollWidth > metrics.clientWidth);
     assert.equal(metrics.overflowX, "auto");
     await chips.focus();
