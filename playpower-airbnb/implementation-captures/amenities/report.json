@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-26T10:50:53.339Z",
+  "browser": "156.0.8078.4",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "dpr": 1
+  },
+  "checks": [
+    "house icon uses stable supplied-symbol artwork and exact bounds",
+    "description expands to supplied full copy and collapses again",
+    "amenities button opens one modal, locks background and focuses close",
+    "all supplied amenity groups and 44 verified rows render in order",
+    "amenities content scrolls independently while the page remains fixed",
+    "Escape closes amenities and restores opener focus and scroll",
+    "visible close button closes amenities and restores focus",
+    "review highlights are a keyboard-focusable horizontal scroller",
+    "no runtime, console or HTTP errors"
+  ],
+  "errors": [],
+  "suppliedAmenityRows": 44,
+  "referenceButtonLabel": "Show all 50 amenities"
+}

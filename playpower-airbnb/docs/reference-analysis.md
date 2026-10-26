@@ -2,7 +2,37 @@
 
 Reference: https://airbnb-clone-umber-two.vercel.app
 
-Updated 2026-10-25 (Asia/Calcutta).
+Updated 2026-10-26 (Asia/Calcutta).
+
+## Amenities, description and review-strip evidence — 26 October
+
+New user-supplied screenshots verify three additional reference interactions and one header detail:
+
+- The search-home control represents the Unicode **🏡** glyph. The reference screenshot's emoji artwork differs from the local Chromium system-emoji artwork despite using the same code point. The clone therefore uses an original fixed SVG reconstruction of the visible gray roof, pale house, pink door/windows and green garden at the supplied31.59×30.4px bounds. This avoids platform-dependent emoji substitutions; it is visually reconstructed from the screenshot and is not copied source artwork.
+- **Show all 50 amenities** opens a centered white modal over a dimmed Listing. Normalizing the2880×1800 screenshot to its1440×900 CSS viewport establishes x330,y48,width780,height804px. The reconstructed modal uses12px radius, a fixed close control,48px content gutters, a26/34px title,22/28px group headings,16/24px amenity text and56px divided rows. Its content surface scrolls independently. Escape and the visible close button restore the exact opener and preserve Listing scroll.
+- The supplied amenity text contains12groups and44displayed rows, including Cot in both Bedroom and laundry and Family. The reference button still says50. The implementation renders all44verified rows in the supplied order and does not invent the six absent rows. Amenity icons are original local line drawings/approximations; no reference SVG paths were copied.
+- The property description expands in place to the supplied full paragraph and changes its control to **Show less**. Collapse/expand exposes `aria-expanded` and keeps the description related through `aria-controls`.
+- The eight review-highlight chips are a single horizontally scrollable row. The local region is keyboard focusable, hides only the scrollbar chrome and retains real horizontal overflow; the screenshot evidence does not establish buttons or click actions for these chips.
+
+Local browser evidence is in [amenities report](../implementation-captures/amenities/report.json), with [modal top](../implementation-captures/amenities/amenities-top.png), [modal bottom](../implementation-captures/amenities/amenities-bottom.png), [expanded description](../implementation-captures/amenities/description-expanded.png) and [scrolled review highlights](../implementation-captures/amenities/review-highlights-scrolled.png). These verify the local behaviors against supplied static states; exact original scroll physics, focus handling and all six unprovided amenity rows remain unverified.
+
+## Interaction audit and supplied computed-style evidence — 26 October
+
+A headed Chromium 156.0.8078.4 visit at 1440×900, DPR 1 again returned **HTTP 429 / Vercel Security Checkpoint**, with “We're verifying your browser”. Requests stopped there. See the [access report](reference-audit/reference-access.json), [blocked-page capture](reference-audit/screenshots/reference-access-blocked.png), [interaction matrix](reference-audit/interaction-matrix.md), [gap analysis](reference-audit/gap-analysis.md) and [specific manual checklist](reference-audit/manual-capture-checklist.md). No original interaction was directly confirmed in this attempt. The initial sandbox network-denial was distinguished from the subsequent actual website response.
+
+Three user-supplied inline DevTools screenshots now establish these exact computed-style values for the reference; earlier unknown-family statements are superseded **only for these elements**:
+
+| Element | Supplied font / color | Supplied bounds | Local measured result |
+| --- | --- | --- | --- |
+| Listing H1 | 26px Arial, Helvetica, sans-serif; #222222 | 603.85×34 CSS px | Same family/size/color; 603.84375×34 |
+| Property H2 | 22px Arial, Helvetica, sans-serif; #222222 | 498.4×28 CSS px | Same family/size/color; 28px line height; block width652, text bounds450.39 at 1440px viewport |
+| Search house | 🏡 symbol; screenshot shows gray-roof/pink-door garden artwork | 31.59×30.4 CSS px | Stable original SVG at31.59×30.4 rather than platform emoji artwork |
+
+These attachments are in the conversation, not files in reference-captures. Their original viewport/zoom/DPR was not provided. H2 block width is affected by the column/viewport and is not its text width. Do not upscale fonts from physical screenshot pixels or change a correct26px font to approximate a zoomed image. The tooltips do not explicitly report weight or letter spacing; local600/-0.6px H1 and600/-0.35px H2 remain local choices. Font identity elsewhere and all original motion remain unverified. The house symbol's supplied visual bounds are retained; its rendered artwork is stabilized as described above.
+
+The user reports that sleeping images open Tour, date/guest selection works, Reserve scrolls to dates, and Save turns red. Those are **user-reported reference observations**, not automated confirmations. The local audit found sleeping images, 1–3 native guests and Listing red-heart Save already work. Basic date selection was defective: it changed only a day/day+5 highlight, without updating the booking dates or summary. A shared date-only range now synchronizes calendar and booking fields, supports month/year traversal and Clear dates; check-in/checkout and Reserve scroll to the inline calendar and focus its heading, respecting reduced motion. Selection mechanics and focus placement are local accessible decisions; exact reference field popups, unavailable-date rules and price calculation remain blocked.
+
+The original **₹28,499 for five nights and cancellation terms remain fixed screenshot content**, not a recalculated quote for changed dates. Crossed-out November dates retain screenshot styling; live availability/disabled-date semantics have not been established or implemented. No fake availability, nightly rate, checkout service, guest-category popup, Save persistence or secondary dialog was invented. See [booking regression](reference-audit/booking-regression.json) for local coverage, and the matrix for no-action controls. All existing photo assets/order and gallery behavior remain intact.
 
 ## Lightbox sizing and image-quality follow-up
 
@@ -40,7 +70,9 @@ Below-fold: large4.95 laurel rating; Cleanliness/Accuracy/Check-in/Communication
 
 ### Verified Photo Tour and Lightbox observations
 
-Tour begins beneath global title around y160. Back/Photo tour/share/heart toolbar. Content x232,width976. Thumbnail112x104,radius8,gap12; eight in row1,one in row2. Category order: Living room 1,Living room 2,Full kitchen,Bedroom,Full bathroom,Gym,Exterior,Pool,Additional photos. First section y582: left32px heading and muted16px Sofa · Air conditioning · Ceiling fan · TV; right457x306 main photo and two222x148 photos below. The long capture does NOT show the complete Tour after this first group.
+The earlier implementation placed the Tour beneath a duplicated 160px Listing header/title block. The user has since explicitly corrected this behavior: opening any photo must show the Photo Tour without the main-page site header or listing title. The Tour therefore starts with its own 72px back/title/share/save toolbar at the top. Content remains x232,width976 at 1440px; thumbnail112x104,radius8,gap12; eight in row1,one in row2. Category order: Living room 1,Living room 2,Full kitchen,Bedroom,Full bathroom,Gym,Exterior,Pool,Additional photos. The available long capture does NOT show the complete Tour after the first group, so lower-group fidelity remains unverified.
+
+The supplied cropped scroll-state screenshot verifies a white fixed section bar containing `Photos`, `Amenities`, `Reviews`, and `Location`, with a dark underline beneath the active `Photos` tab and a light bottom divider. A wider supplied modal screenshot additionally shows the compact right side: `₹28,499 for 5 nights`, `★ 4.95 · 19 reviews`, and a red `Reserve` button. The user reports that this bar slides down as the Listing scrolls. The screenshots do not establish the exact trigger scroll offset or animation timing; the implementation uses 620px and 220ms as documented assumptions.
 
 Lightbox white fullscreen; topbar72; grid at left,Living room 1,counter 1 of 43,close. Main image x236,y88,w968,h726 (4:3). Previous/next40px circles centered vertically. First previous is visibly muted. No other Lightbox state is supplied.
 

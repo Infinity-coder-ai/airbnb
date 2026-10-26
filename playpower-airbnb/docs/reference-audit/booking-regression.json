@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-26T10:51:51.890Z",
+  "browser": "156.0.8078.4",
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "dpr": 1
+  },
+  "checks": [
+    "initial dates and supplied font/icon values are retained",
+    "Reserve scrolls to dates and focuses calendar without changing URL",
+    "clear dates resets both booking fields and accessible date summary",
+    "cross-month range updates endpoints, intervening highlights and booking fields",
+    "check-in and checkout fields choose the intended endpoint with keyboard activation",
+    "months and date arithmetic cross a year; earlier end restarts selection",
+    "native guest selector supports all three allowed values and survives gallery round-trip",
+    "both sleeping cards open Tour and restore scroll and exact focus",
+    "Save toggles a red heart and existing refresh behavior is preserved",
+    "Reserve also reaches the calendar with normal smooth-motion preference",
+    "no runtime, console or HTTP asset errors"
+  ],
+  "errors": [],
+  "referenceEquivalence": "Unverified: original access blocked; basic scope supported by explicit user reports."
+}

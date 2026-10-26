@@ -2,7 +2,6 @@ import { useEffect, useLayoutEffect } from "react";
 import type { RefObject } from "react";
 import { asset, galleryAsset, groups, photos } from "../data/photos";
 import { Icon } from "./Icon";
-import { SiteHeader, TitleBar } from "./SiteChrome";
 
 export function PhotoTour({
   rootRef,
@@ -25,10 +24,6 @@ export function PhotoTour({
       aria-hidden={hidden || undefined}
       inert={hidden}
     >
-      <div className="tour-chrome" aria-hidden="true">
-        <SiteHeader decorative />
-        <TitleBar decorative />
-      </div>
       <div className="tour-toolbar">
         <button
           id="tour-close"

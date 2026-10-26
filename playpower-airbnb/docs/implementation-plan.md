@@ -1,5 +1,19 @@
 # Implementation plan
 
+## Amenities and expandable content — 26 October 2026
+
+The Listing now owns the description-expanded and amenities-open state. A native modal dialog provides browser-level modal semantics and background inertness; its internal scroll surface holds the12 supplied groups and44 verified rows. Body scrolling is locked while open, and both Escape and the close button restore the amenities opener without moving the Listing. `data/listing.ts` is the single source for the full verified amenity list. The reference label remains “Show all50amenities”; missing rows are not fabricated.
+
+The description uses the supplied complete text with a bounded collapsed state and Show more/Show less toggle. Review highlights use a focusable horizontal region with eight nonshrinking chips and hidden scrollbar chrome. The 🏡 search-home symbol uses stable original SVG artwork at the supplied dimensions because system emoji artwork differed from the screenshot. `npm.cmd run verify:amenities` validates these behaviors at1440×900 and checks for runtime/HTTP errors.
+
+## Interaction audit and bounded repair — 26 October 2026
+
+The [interaction matrix](reference-audit/interaction-matrix.md) and [gap analysis](reference-audit/gap-analysis.md) were started before UI edits. Headed Chromium starts but the original returns HTTP429, so its live behavior remains blocked. Existing screenshots and explicit user reports support only bounded changes; unknown secondary dialogs, destinations, availability and pricing remain deferred.
+
+`ListingPage` now owns a shared `StayDates` date-only range, selection endpoint and displayed month. `Calendar` and `BookingCard` consume that state. `data/stayDates.ts` handles date formatting and UTC day arithmetic, avoiding timezone/DST errors. Date selection supports cross-month/year ranges and Clear dates; check-in/checkout and Reserve request the inline calendar with heading focus and reduced-motion-aware scrolling. The native guest selector, red-heart Save, sleeping-image Tour entries, photo dataset and all gallery geometry are preserved. Quote/cancellation text remains the supplied fixed snapshot; no dynamic pricing or live availability is claimed.
+
+Reproduce local evidence with `npm.cmd run audit:local`, `npm.cmd run audit:gallery`, then `npm.cmd run audit:report`; the first run inspects every Listing control independently. `npm.cmd run verify:booking` checks dates, both Reserve motion settings, guests, Save, sleeping-card focus/scroll and runtime errors. Existing frontend/Lightbox suites still cover gallery behavior. `npm.cmd run audit:reference` is a single headed access attempt and exits nonzero on blocking; do not loop it against the checkpoint. Manual capture requirements are in [the checklist](reference-audit/manual-capture-checklist.md).
+
 ## Follow-up: stable Lightbox and adequate-resolution media
 
 Implemented on the existing components/state model: persistent contain-fit image in a fixed viewport-derived canvas; stable title/counter fields and unchanged arrow/close positions; neighbour preload/decode; no forced photo ratio. Fourteen exact photo matches from public rendered galleries are local 2560px JPEGs with source/hash provenance. No photos or sequence entries were invented; count stays14until the reference's full43sequence is verified. Listing photo placements use the clean media with their existing cover geometry; small screenshot thumbnails/avatars remain.
@@ -174,7 +188,7 @@ These are executable-instruction workflows for Codex, not separate running agent
 | Missing photo originals and ordering | Hero/Tour/Lightbox can show the wrong image or insufficient quality | Complete the concrete asset register before photo layout approval |
 | Unknown fonts, weights and reuse rights | Different wrapping and uncertain asset use | Verify rendered font files and legitimate reuse source |
 | Unknown navigation scope and boundary behavior | Incorrect previous/next or counter | Traverse first/last and group transitions on the actual reference |
-| Unknown overlay, sticky and scrolling rules | Incorrect positioning and return context | Capture full entry/scroll/exit and read the scroll container offsets |
+| Sticky trigger and animation timing are not measurable from the supplied stills | Minor scroll-transition mismatch | Current structure uses an 80px fixed section bar; 620px trigger and 220ms easing remain implementation assumptions pending a recording |
 | Screenshots alone | Motion, keyboard/focus, computed styles and original media cannot be established | Supply recordings and rendered metadata; retain gaps explicitly |
 | Cross-platform font rasterization / DPR | False-positive visual differences | Match capture environment and report residual rendering differences |
 | UI not authorized in this phase | Premature implementation would exceed scope | Finish docs/config validation and wait for the next UI instruction |

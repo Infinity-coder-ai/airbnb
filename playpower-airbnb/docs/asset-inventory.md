@@ -1,5 +1,15 @@
 # Asset inventory — current screenshot-derived assets
 
+## Search-home icon update — 26 October 2026
+
+`src/assets/reference/search-home.png` is a128×115 transparent PNG derived from the user's newly supplied house artwork through the built-in image editing workflow, then losslessly PNG-compressed for the31.59×30.4px header placement. The edit request preserved the house, roof, red door, windows, greenery, path, circular lighting and proportions while removing only surrounding background pixels. It replaces the temporary code-drawn SVG and avoids system emoji variation. The generated extraction is a close visual derivative rather than a byte-identical crop because the chat image was not exposed as a local source file. It is used only for the search-home placement and is not presented as a reference-site original download.
+
+## Computed font/icon evidence — 26 October 2026
+
+The inline user DevTools screenshots verify Arial, Helvetica, sans-serif at26px for H1 and22px for the property H2; color#222222. The search-home span is23px in the reference and its visible symbol occupies31.59×30.4px, but OS emoji artwork did not visually match between captures. The local house is now an original screenshot-matched SVG inside the same measured box, with no downloaded asset or copied reference path. Weight, letter spacing, rendered font files elsewhere, and redistribution rights are not established by the tooltips. See [reference analysis](reference-analysis.md) for bounds and viewport limitations.
+
+No photo files or image sequence were changed during the interaction audit. All14 matched public photographs and31 screenshot derivatives are preserved. The reference audit is [blocked by HTTP429](reference-audit/reference-access.json); no additional29 gallery entries were inferred or imported.
+
 ## Current quality update
 
 There are now **45 local raster assets: 31 retained screenshot crops and 14 high-resolution public JPEGs**. Every existing property photo has been visually matched to a public photograph from the [same Airbnb listing](https://www.airbnb.co.in/rooms/1599895892448055764) and its [public property gallery](https://bukavilla.com/v/mirashya-homes-botanica-by-raichandani-romantic-jacuzzi-1bhk-candolim-mirashya-ug10). All 14 public files are 2560 pixels wide: twelve are 2560 x 1920, and the two exterior views are 2560 x 1437. The public JPEG bytes are preserved without re-encoding, sharpening or enlargement.

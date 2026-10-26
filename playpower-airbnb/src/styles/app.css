@@ -165,7 +165,18 @@ svg {
   font-weight: 400;
 }
 .search-home {
-  font-size: 23px;
+  width: 31.59px;
+  height: 30.4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 31.59px;
+}
+.search-home img {
+  width: 31.59px;
+  height: 30.4px;
+  display: block;
+  object-fit: contain;
 }
 .search-button {
   background: #ff385c;
@@ -213,6 +224,86 @@ svg {
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+}
+.sticky-section-bar {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 80px;
+  z-index: 15;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+  transform: translateY(-100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    transform 0.22s ease,
+    visibility 0s linear 0.22s;
+}
+.sticky-section-bar.visible {
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+.sticky-section-inner {
+  width: calc(100% - 80px);
+  max-width: 1120px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sticky-section-inner nav {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+}
+.sticky-section-inner nav button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sticky-section-inner nav button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  inset: auto 0 16px;
+  background: #222;
+  transform: scaleX(0);
+  transition: transform 0.18s ease;
+}
+.sticky-section-inner nav button:hover::after,
+.sticky-section-inner nav button.active::after {
+  transform: scaleX(1);
+}
+.sticky-booking {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.sticky-booking p {
+  text-align: right;
+  font-size: 14px;
+  line-height: 19px;
+}
+.sticky-booking p strong {
+  font-size: 16px;
+}
+.sticky-booking p span {
+  display: block;
+}
+.sticky-booking .reserve {
+  width: 130px;
+  height: 48px;
+}
+#photos,
+#amenities,
+#reviews,
+#location,
+.calendar-section {
+  scroll-margin-top: 80px;
 }
 .hero-tile {
   overflow: hidden;
@@ -395,8 +486,9 @@ svg {
   max-height: 96px;
   overflow: hidden;
 }
-.faded {
-  color: #aaa;
+.description-copy.expanded {
+  max-height: none;
+  overflow: visible;
 }
 .description > .underlined {
   font-size: 16px;
@@ -456,6 +548,70 @@ svg {
   color: #717171;
   text-decoration: line-through;
 }
+.amenities-dialog {
+  width: min(780px, calc(100vw - 64px));
+  height: min(804px, calc(100vh - 96px));
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  color: #222;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 30px #00000024;
+}
+.amenities-dialog::backdrop {
+  background: #00000073;
+}
+.amenities-dialog-shell {
+  height: 100%;
+  position: relative;
+  padding-top: 60px;
+}
+.amenities-close {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 16px;
+}
+.amenities-dialog-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px 48px 48px;
+}
+.amenities-dialog-scroll h2 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+  margin-bottom: 23px;
+}
+.amenity-group + .amenity-group {
+  margin-top: 30px;
+}
+.amenity-group h3 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.35px;
+  margin-bottom: 0;
+}
+.amenity-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.amenity-group li {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 16px;
+  line-height: 24px;
+}
 .booking-column {
   align-self: start;
 }
@@ -503,13 +659,14 @@ svg {
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
 }
-.booking-fields > div {
+.booking-fields > .booking-date {
   padding: 10px 12px;
   display: flex;
   flex-direction: column;
   gap: 7px;
+  text-align: left;
 }
-.booking-fields > div:first-child {
+.booking-fields > .booking-date:first-child {
   border-right: 1px solid #bbb;
 }
 .booking-fields b {
@@ -544,6 +701,7 @@ svg {
 }
 .reserve {
   display: block;
+  width: 100%;
   background: linear-gradient(100deg, #ed1951, #df006f);
   border-radius: 28px;
   text-align: center;
@@ -730,9 +888,16 @@ svg {
 .review-chips {
   display: flex;
   gap: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
   white-space: nowrap;
   margin-bottom: 30px;
+}
+.review-chips::-webkit-scrollbar {
+  display: none;
 }
 .review-chips > span {
   display: inline-flex;
@@ -740,8 +905,13 @@ svg {
   align-items: center;
   border: 1px solid #ddd;
   border-radius: 16px;
-  padding: 15px;
-  font-size: 14px;
+  padding: 16px 18px;
+  min-width: 150px;
+  min-height: 58px;
+  justify-content: center;
+  font-size: 16px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 .review-grid {
   display: grid;
@@ -1095,18 +1265,14 @@ svg {
   visibility: hidden;
   pointer-events: none;
 }
-.tour-chrome {
-  height: 160px;
-  overflow: hidden;
-  pointer-events: none;
-}
 .tour-toolbar {
-  height: 60px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
   position: relative;
+  border-bottom: 1px solid #ebebeb;
 }
 .tour-toolbar > strong {
   position: absolute;
@@ -1120,7 +1286,7 @@ svg {
   gap: 4px;
 }
 .tour-scroll {
-  height: calc(100dvh - 220px);
+  height: calc(100dvh - 72px);
   overflow: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;

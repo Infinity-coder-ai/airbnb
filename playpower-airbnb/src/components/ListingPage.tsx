@@ -1,14 +1,129 @@
+import { useEffect, useRef, useState } from "react";
 import { asset, galleryAsset, heroIds, photoById } from "../data/photos";
-import { amenities, features, nearby, reviews } from "../data/listing";
+import { dateFromKey, formatStayDate, initialStay } from "../data/stayDates";
+import type { DateField, StayDates } from "../data/stayDates";
+import {
+  amenities,
+  amenityGroups,
+  features,
+  nearby,
+  reviews,
+} from "../data/listing";
 import { Icon, Laurel } from "./Icon";
 import { Calendar } from "./Calendar";
 
 type Props = { onOpenTour: (photoId?: string) => void };
+type ListingSection = "photos" | "amenities" | "reviews" | "location";
+
+function StickySectionNav({
+  visible,
+  active,
+  onNavigate,
+  onReserve,
+}: {
+  visible: boolean;
+  active: ListingSection;
+  onNavigate: (section: ListingSection) => void;
+  onReserve: () => void;
+}) {
+  return (
+    <header
+      className={`sticky-section-bar ${visible ? "visible" : ""}`}
+      aria-hidden={visible ? undefined : true}
+      inert={!visible}
+    >
+      <div className="sticky-section-inner">
+        <nav aria-label="Listing sections">
+          {(["photos", "amenities", "reviews", "location"] as const).map(
+            (section) => (
+              <button
+                key={section}
+                className={active === section ? "active" : ""}
+                aria-current={active === section ? "location" : undefined}
+                onClick={() => onNavigate(section)}
+              >
+                {section[0].toUpperCase() + section.slice(1)}
+              </button>
+            ),
+          )}
+        </nav>
+        <div className="sticky-booking">
+          <p>
+            <strong>₹28,499</strong> for 5 nights
+            <span>★ 4.95 · 19 reviews</span>
+          </p>
+          <button className="reserve" onClick={onReserve}>Reserve</button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
 function OutlineButton({ children }: { children: React.ReactNode }) {
   return <button className="outline-button">{children}</button>;
 }
 
-function BookingCard() {
+function AmenitiesDialog({ onClose }: { onClose: () => void }) {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    const previousOverflow = document.body.style.overflow;
+    dialog.showModal();
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      if (dialog.open) dialog.close();
+    };
+  }, []);
+
+  return (
+    <dialog
+      ref={dialogRef}
+      className="amenities-dialog"
+      aria-labelledby="amenities-dialog-title"
+      onCancel={(event) => {
+        event.preventDefault();
+        onClose();
+      }}
+    >
+      <div className="amenities-dialog-shell">
+        <button
+          className="amenities-close round"
+          aria-label="Close amenities"
+          onClick={onClose}
+        >
+          <Icon name="close" size={22} />
+        </button>
+        <div className="amenities-dialog-scroll">
+          <h2 id="amenities-dialog-title">What this place offers</h2>
+          {amenityGroups.map((group) => (
+            <section className="amenity-group" key={group.title}>
+              <h3>{group.title}</h3>
+              <ul>
+                {group.items.map(([icon, label]) => (
+                  <li key={label}>
+                    <Icon name={icon} size={28} />
+                    <span>{label}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </div>
+    </dialog>
+  );
+}
+
+function BookingCard({
+  stay,
+  onChooseDate,
+}: {
+  stay: StayDates;
+  onChooseDate: (field: DateField) => void;
+}) {
   return (
     <aside className="booking-column" aria-label="Stay details">
       <div className="offer">
@@ -28,14 +143,26 @@ function BookingCard() {
           for 5 nights
         </div>
         <div className="booking-fields">
-          <div>
+          <button
+            className="booking-date"
+            aria-label="Choose check-in date"
+            onClick={() => onChooseDate("checkin")}
+          >
             <b>CHECK-IN</b>
-            <span>10/18/2026</span>
-          </div>
-          <div>
+            <span>
+              {stay.checkIn ? formatStayDate(stay.checkIn, true) : "Add date"}
+            </span>
+          </button>
+          <button
+            className="booking-date"
+            aria-label="Choose checkout date"
+            onClick={() => onChooseDate("checkout")}
+          >
             <b>CHECKOUT</b>
-            <span>10/23/2026</span>
-          </div>
+            <span>
+              {stay.checkOut ? formatStayDate(stay.checkOut, true) : "Add date"}
+            </span>
+          </button>
           <label>
             <b>GUESTS</b>
             <select aria-label="Number of guests" defaultValue="2">
@@ -48,9 +175,9 @@ function BookingCard() {
         <p className="cancellation">
           Free cancellation before <strong>17 October</strong>
         </p>
-        <a className="reserve" href="#dates">
+        <button className="reserve" onClick={() => onChooseDate("checkin")}>
           Reserve
-        </a>
+        </button>
         <p className="no-charge">You won't be charged yet</p>
       </div>
       <button className="report">
@@ -71,7 +198,7 @@ function Reviews() {
     ["Value", "4.8", "tag"],
   ];
   return (
-    <section className="reviews-section" aria-labelledby="reviews-heading">
+    <section id="reviews" className="reviews-section" aria-labelledby="reviews-heading">
       <div className="rating-feature">
         <div className="rating-number">
           <Laurel className="laurel-art left" />
@@ -105,7 +232,12 @@ function Reviews() {
           </div>
         ))}
       </div>
-      <div className="review-chips">
+      <div
+        className="review-chips"
+        role="region"
+        aria-label="Review highlights"
+        tabIndex={0}
+      >
         {[
           ["🛋️", "Comfort", "6"],
           ["✅", "Accuracy", "5"],
@@ -154,7 +286,7 @@ function Reviews() {
 
 function Location() {
   return (
-    <section className="location-section">
+    <section id="location" className="location-section">
       <h2>Where you’ll be</h2>
       <p>Candolim, Goa, India</p>
       <div
@@ -349,9 +481,87 @@ function PoliciesAndNearby() {
 }
 
 export function ListingPage({ onOpenTour }: Props) {
+  const [stay, setStay] = useState<StayDates>(initialStay);
+  const [dateField, setDateField] = useState<DateField>("checkin");
+  const [monthOffset, setMonthOffset] = useState(9);
+  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+  const [amenitiesOpen, setAmenitiesOpen] = useState(false);
+  const [stickyVisible, setStickyVisible] = useState(false);
+  const [activeSection, setActiveSection] = useState<ListingSection>("photos");
+  const amenitiesOpenerRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      setStickyVisible(window.scrollY >= 620);
+      const marker = window.scrollY + 104;
+      const sectionPositions = (["amenities", "reviews", "location"] as const)
+        .map((id) => ({ id, top: document.getElementById(id)?.offsetTop ?? Infinity }))
+        .filter(({ top }) => Number.isFinite(top));
+      let current: ListingSection = "photos";
+      for (const section of sectionPositions) {
+        if (marker >= section.top) current = section.id;
+      }
+      setActiveSection(current);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
+  const closeAmenities = () => {
+    setAmenitiesOpen(false);
+    requestAnimationFrame(() =>
+      amenitiesOpenerRef.current?.focus({ preventScroll: true }),
+    );
+  };
+  const chooseDate = (key: string) => {
+    if (dateField === "checkin" || !stay.checkIn || key <= stay.checkIn) {
+      setStay({ checkIn: key, checkOut: null });
+      setDateField("checkout");
+    } else {
+      setStay({ checkIn: stay.checkIn, checkOut: key });
+      setDateField("checkin");
+    }
+  };
+  const requestDate = (field: DateField) => {
+    setDateField(field);
+    const selected =
+      field === "checkout" ? stay.checkOut ?? stay.checkIn : stay.checkIn;
+    if (selected) {
+      const date = dateFromKey(selected);
+      setMonthOffset((date.getUTCFullYear() - 2026) * 12 + date.getUTCMonth());
+    }
+    document.getElementById("dates")?.scrollIntoView({
+      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+      block: "start",
+    });
+    document.getElementById("dates-heading")?.focus({ preventScroll: true });
+  };
+  const navigateToSection = (section: ListingSection) => {
+    document.getElementById(section)?.scrollIntoView({
+      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+      block: "start",
+    });
+  };
   return (
     <main id="listing" className="page-width listing-page">
-      <div className="hero-grid">
+      <StickySectionNav
+        visible={stickyVisible}
+        active={activeSection}
+        onNavigate={navigateToSection}
+        onReserve={() => requestDate("checkin")}
+      />
+      <div id="photos" className="hero-grid">
         {heroIds.map((id, index) => (
           <button
             className={`hero-tile hero-${index}`}
@@ -417,19 +627,26 @@ export function ListingPage({ onOpenTour }: Props) {
               Some info has been automatically translated.{" "}
               <button className="underlined">Show original</button>
             </p>
-            <p className="description-copy">
+            <p
+              className={`description-copy ${descriptionExpanded ? "expanded" : ""}`}
+              id="listing-description"
+            >
               🌴 Plan Your Relaxing Holiday at Amor De Goa by Mirashya Homes! ✨
               Stay in this cozy 1BHK in the heart of Candolim, featuring a
               private jacuzzi 🛁 for the perfect unwind. Enjoy high-speed WiFi
               💻, Smart TV 📺, pet-friendly comfort 🐾, and stylish interiors.
-              <br />
-              <span className="faded">
-                Just minutes from Candolim Beach 🏖️, popular cafés, restaurants,
-                and nightlife 🍹, it’s
-              </span>
+              Just minutes from Candolim Beach 🏖️, popular cafés, restaurants,
+              and nightlife 🍹, it’s ideal for couples seeking romance,
+              relaxation, and a touch of luxury in North Goa. 💗 🌴
             </p>
-            <button className="underlined inline-icon">
-              Show more <Icon name="next" size={18} />
+            <button
+              className="underlined inline-icon"
+              aria-expanded={descriptionExpanded}
+              aria-controls="listing-description"
+              onClick={() => setDescriptionExpanded((expanded) => !expanded)}
+            >
+              {descriptionExpanded ? "Show less" : "Show more"}
+              <Icon name="next" size={18} />
             </button>
           </section>
           <section className="sleep-section">
@@ -457,7 +674,7 @@ export function ListingPage({ onOpenTour }: Props) {
               ))}
             </div>
           </section>
-          <section className="amenities">
+          <section id="amenities" className="amenities">
             <h2>What this place offers</h2>
             <div className="amenity-grid">
               {amenities.map(([icon, label], index) => (
@@ -467,16 +684,34 @@ export function ListingPage({ onOpenTour }: Props) {
                 </div>
               ))}
             </div>
-            <OutlineButton>Show all 50 amenities</OutlineButton>
+            <button
+              ref={amenitiesOpenerRef}
+              className="outline-button"
+              onClick={() => setAmenitiesOpen(true)}
+            >
+              Show all 50 amenities
+            </button>
           </section>
-          <Calendar />
+          <Calendar
+            stay={stay}
+            offset={monthOffset}
+            onMonthChange={setMonthOffset}
+            onSelect={chooseDate}
+            onClear={() => {
+              setStay({ checkIn: null, checkOut: null });
+              setDateField("checkin");
+            }}
+          />
         </div>
-        <BookingCard />
+        <BookingCard stay={stay} onChooseDate={requestDate} />
       </div>
       <Reviews />
       <Location />
       <Host />
       <PoliciesAndNearby />
+      {amenitiesOpen && (
+        <AmenitiesDialog onClose={closeAmenities} />
+      )}
     </main>
   );
 }

@@ -37,6 +37,11 @@ const drawings: Record<string, string> = {
   school: "M1 8l11-6 11 6-11 6L1 8Zm4 3v8l7 4 7-4v-8M23 8v10",
   balloon: "M12 2C2 2 2 14 12 19 22 14 22 2 12 2Zm0 17v5",
   home: "M2 11 12 2l10 9v11h-7v-9H9v9H2V11Z",
+  window: "M3 3h18v18H3V3Zm9 0v18M3 12h18",
+  bed: "M3 12h18v8M5 12V7h6a3 3 0 0 1 3 3v2M3 17h18M5 20v2m14-2v2",
+  tv: "M3 5h18v14H3V5Zm6 17h6M9 2l3 3 3-3",
+  snow: "M12 2v20M4 7l16 10M4 17 20 7M8 4l4 3 4-3M8 20l4-3 4 3",
+  gym: "M3 9v6m3-8v10m12-10v10m3-8v6M6 12h12",
 };
 export function Icon({
   name,

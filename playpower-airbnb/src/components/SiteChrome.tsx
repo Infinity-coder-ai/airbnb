@@ -1,4 +1,5 @@
 import { useState } from "react";
+import searchHome from "../assets/reference/search-home.png";
 import { title } from "../data/listing";
 import { Icon } from "./Icon";
 
@@ -25,8 +26,12 @@ export function SiteHeader({ decorative = false }: { decorative?: boolean }) {
         <span>airbnb</span>
       </a>
       <div className="search-pill">
-        <span className="search-home" aria-hidden="true">
-          🏡
+        <span
+          className="search-home"
+          data-reference-symbol="🏡"
+          aria-hidden="true"
+        >
+          <img src={searchHome} alt="" />
         </span>
         <button disabled={decorative}>Anywhere</button>
         <span />

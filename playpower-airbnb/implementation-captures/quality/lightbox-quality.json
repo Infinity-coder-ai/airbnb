@@ -920,7 +920,7 @@
   ],
   "shifts": [
     {
-      "at": 1692.0999999046326,
+      "at": 1672.7999999998137,
       "value": 0.00008128844628772292,
       "hadRecentInput": true,
       "sources": [
@@ -952,7 +952,7 @@
       "lightbox": true
     },
     {
-      "at": 1731.8999999761581,
+      "at": 1708.5,
       "value": 0.00008599108367626887,
       "hadRecentInput": true,
       "sources": [
@@ -984,7 +984,7 @@
       "lightbox": true
     },
     {
-      "at": 1797.0999999046326,
+      "at": 1774.6999999997206,
       "value": 0.00017685275607638888,
       "hadRecentInput": true,
       "sources": [
@@ -1016,7 +1016,7 @@
       "lightbox": true
     },
     {
-      "at": 2032.5999999046326,
+      "at": 2019.0999999996275,
       "value": 0.0003443002373756859,
       "hadRecentInput": true,
       "sources": [
@@ -1048,7 +1048,7 @@
       "lightbox": true
     },
     {
-      "at": 2114.6999999284744,
+      "at": 2108.5999999996275,
       "value": 0.00011965144488383059,
       "hadRecentInput": true,
       "sources": [
@@ -1104,7 +1104,7 @@
       "lightbox": true
     },
     {
-      "at": 2427.899999976158,
+      "at": 2402.6999999997206,
       "value": 0.00012411603679055212,
       "hadRecentInput": true,
       "sources": [
@@ -1136,7 +1136,7 @@
       "lightbox": true
     },
     {
-      "at": 2516.0999999046326,
+      "at": 2491.7999999998137,
       "value": 0.0004877306777263375,
       "hadRecentInput": true,
       "sources": [
@@ -1168,8 +1168,8 @@
       "lightbox": true
     },
     {
-      "at": 2857,
-      "value": 0.00036361464093578535,
+      "at": 2850.399999999907,
+      "value": 0.0004877306777263375,
       "hadRecentInput": true,
       "sources": [
         {
@@ -1200,7 +1200,39 @@
       "lightbox": true
     },
     {
-      "at": 2886.5999999046326,
+      "at": 2865.6999999997206,
+      "value": 0.00012411603679055212,
+      "hadRecentInput": true,
+      "sources": [
+        {
+          "node": "#text",
+          "parent": "lightbox-title",
+          "previous": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          },
+          "current": {
+            "x": 130,
+            "y": 27,
+            "width": 1180,
+            "height": 17,
+            "top": 27,
+            "right": 1310,
+            "bottom": 44,
+            "left": 130
+          }
+        }
+      ],
+      "lightbox": true
+    },
+    {
+      "at": 2894.899999999907,
       "value": 0.00011965144488383059,
       "hadRecentInput": true,
       "sources": [
@@ -1256,7 +1288,7 @@
       "lightbox": true
     },
     {
-      "at": 2901.399999976158,
+      "at": 2910.1999999997206,
       "value": 0.0003443002373756859,
       "hadRecentInput": true,
       "sources": [
@@ -1288,7 +1320,7 @@
       "lightbox": true
     },
     {
-      "at": 2916.1999999284744,
+      "at": 2927.1999999997206,
       "value": 0.00017685275607638888,
       "hadRecentInput": true,
       "sources": [
@@ -1320,7 +1352,7 @@
       "lightbox": true
     },
     {
-      "at": 2931.2999999523163,
+      "at": 2943.1999999997206,
       "value": 0.00008599108367626887,
       "hadRecentInput": true,
       "sources": [
@@ -1352,7 +1384,7 @@
       "lightbox": true
     },
     {
-      "at": 2958.7999999523163,
+      "at": 2958.5,
       "value": 0.00008128844628772292,
       "hadRecentInput": true,
       "sources": [

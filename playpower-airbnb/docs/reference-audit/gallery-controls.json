@@ -1,0 +1,683 @@
+{
+  "at": "2026-10-26T10:15:12.625Z",
+  "inventories": {
+    "listing": [
+      {
+        "name": "Airbnb home",
+        "tag": "A",
+        "disabled": false
+      },
+      {
+        "name": "Anywhere",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Anytime",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Add guests",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Search",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Become a host",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Language and currency",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Menu",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Share",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Save",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Terrace seating with woven chairs, white cushions, plants and wall lights",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Side view of the terrace seating beside the hot tub",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: White jacuzzi in a wooden surround on the terrace",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Bedroom with a double bed, window, bedside light and mirrored wardrobe",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Apartment building with cream walls, balconies and a red roof",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show all photos",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show original",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Bedroom",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open photo tour: Living room",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show all 50 amenities",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Previous month",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 1, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 2, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 3, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 4, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 5, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 6, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 7, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 8, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 9, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 10, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 11, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 12, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 13, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 14, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 15, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 16, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 17, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 18, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 19, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 20, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 21, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 22, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 23, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 24, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 25, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 26, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 27, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 28, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 29, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 30, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "October 31, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Next month",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 1, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 2, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 3, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 4, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 5, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 6, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 7, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 8, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 9, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 10, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 11, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 12, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 13, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 14, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 15, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 16, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 17, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 18, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 19, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 20, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 21, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 22, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 23, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 24, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 25, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 26, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 27, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 28, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 29, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "November 30, 2026",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Clear dates",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Claim",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Choose check-in date",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Choose checkout date",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Number of guests",
+        "tag": "SELECT",
+        "disabled": false
+      },
+      {
+        "name": "Reserve",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Report this listing",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "How reviews work",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show all 19 reviews",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Show more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Message host",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Learn more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Learn more",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Learn more",
+        "tag": "BUTTON",
+        "disabled": false
+      }
+    ],
+    "tour": [
+      {
+        "name": "Close photo tour",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Share photos",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Save photos",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Living room 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Living room 2",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Full kitchen",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Bedroom",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Full bathroom",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Gym",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Exterior",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Pool",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Additional photos",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Living room 1 photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Living room 1 photo 2",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Living room 1 photo 3",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Living room 2 photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Living room 2 photo 2",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Full kitchen photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Bedroom photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Full bathroom photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Gym photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Exterior photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Exterior photo 2",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Pool photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Additional photos photo 1",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Open Additional photos photo 2",
+        "tag": "BUTTON",
+        "disabled": false
+      }
+    ],
+    "lightbox": [
+      {
+        "name": "Return to photo tour",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Close lightbox",
+        "tag": "BUTTON",
+        "disabled": false
+      },
+      {
+        "name": "Previous photo",
+        "tag": "BUTTON",
+        "disabled": true
+      },
+      {
+        "name": "Next photo",
+        "tag": "BUTTON",
+        "disabled": false
+      }
+    ]
+  },
+  "totalSemanticControlInstancesAcrossViews": 130,
+  "records": [
+    {
+      "id": "close-lightbox",
+      "name": "Close lightbox",
+      "section": "Lightbox",
+      "action": "Click visible control",
+      "status": "CONFIRMED WORKING",
+      "result": "Lightbox closes to Photo Tour; exact original gallery tile receives focus. URL remains http://127.0.0.1:5173/.",
+      "screenshot": "screenshots/local-close-lightbox.png"
+    },
+    {
+      "id": "return-to-photo-tour",
+      "name": "Return to photo tour",
+      "section": "Lightbox",
+      "action": "Click visible control",
+      "status": "CONFIRMED WORKING",
+      "result": "Lightbox closes to Photo Tour; exact original gallery tile receives focus. URL remains http://127.0.0.1:5173/.",
+      "screenshot": "screenshots/local-return-to-photo-tour.png"
+    }
+  ],
+  "errors": []
+}

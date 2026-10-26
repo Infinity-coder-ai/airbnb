@@ -28,12 +28,20 @@ For reproducible dependency installation after a lockfile is available, use npm.
 
 ## Commands
 
+Interaction audit: [matrix](docs/reference-audit/interaction-matrix.md), [gaps](docs/reference-audit/gap-analysis.md), [manual reference checklist](docs/reference-audit/manual-capture-checklist.md). The latest headed reference attempt remains blocked by HTTP429. Supplied H1/H2/house font sizes and family are now verified from the user's DevTools tooltips; other typography details remain incomplete.
+
 | Command | Purpose |
 | --- | --- |
 | npm.cmd run dev | Start Vite with hot reload |
 | npm.cmd run build | Check TypeScript and build into dist/ |
 | npm.cmd run lint | Run ESLint |
 | npm.cmd run typecheck | Check TypeScript without bundling |
+| npm.cmd run verify:booking | Test shared dates, Reserve, guests, sleeping entries and Save; requires dev server |
+| npm.cmd run verify:amenities | Test house geometry, description toggle, amenities modal and horizontal review strip |
+| npm.cmd run audit:reference | Make one headed reference visit; stops on blocking; do not repeatedly retry |
+| npm.cmd run audit:local | Inspect every local Listing control and gallery interaction |
+| npm.cmd run audit:gallery | Inventory all three views and test Lightbox close/grid controls |
+| npm.cmd run audit:report | Generate matrix after both local audit commands |
 | npm.cmd run preview | Serve the production build after building |
 | npm.cmd run browser:smoke | Verify Chromium startup, public-page rendering and a 1440 x 900 screenshot |
 | npm.cmd run capture:reference | Attempt the initial Listing diagnostic capture; stops on an HTTP error |
@@ -64,7 +72,7 @@ Image-quality follow-up: large Listing, Tour and Lightbox photos now use14visual
 
 Reference: https://airbnb-clone-umber-two.vercel.app
 
-No application source was copied. Visible text was transcribed and image-only regions were cropped from user-supplied reference screenshots. Local Lightbox navigates14 available property photos instead of inventing the missing29. Original media files, font metadata and reference interaction recordings are still needed for full fidelity. Ancillary search/booking/amenities/review controls are visual presentation outside the three primary-view scope; no real booking or messaging is claimed. The separate production architecture diagram remains a later deliverable.
+No application source was copied. Visible text was transcribed and image-only regions were cropped from user-supplied reference screenshots. Local Lightbox navigates14 available property photos instead of inventing the missing29. Original media files, remaining font metadata and reference interaction recordings are still needed for full fidelity. Basic date selection now updates calendar and booking fields; Reserve scrolls to dates, native guests supports1–3, sleeping photos open Tour and Save turns red. The supplied complete description expands/collapses, the amenities button opens a scrollable modal with all44 supplied rows, and review highlights scroll horizontally. The reference label says50 amenities, but six rows were not supplied and were not invented. Price/cancellation terms remain fixed screenshot content; live availability, dynamic pricing and a real booking service are not implemented. Other ancillary search/review/messaging controls await actual reference behavior evidence. The separate production architecture diagram remains a later deliverable.
 
 ## Planning and AI roles
 

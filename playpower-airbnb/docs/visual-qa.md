@@ -1,5 +1,17 @@
 # Visual QA — supplied screenshot comparison
 
+## Amenities and horizontal-strip comparison
+
+The new2880×1800 screenshot resolves the modal at a1440×900 CSS viewport: x330,y48,width780,height804px,12px corners, gray backdrop, close near16/12px inside the surface,48px content gutters,26/34px title,22/28px group headings,16/24px amenity text and56px divided rows. Local top/bottom captures were inspected against the supplied screenshot. The user-supplied image shows only the early scroll state, so bottom-group layout follows the same verified row system rather than claiming a separate reference measurement.
+
+Review chips now use the wider58px-high nonshrinking layout shown in the supplied horizontal crop and can be scrolled to reveal the final chip. This changes the Listing's total height slightly from the older screenshot-normalized comparison; the newer direct interaction evidence takes precedence for this row. The exact original scrollbar visibility, wheel behavior and snap behavior remain unverified.
+
+## 26 October interaction pass
+
+Four unmasked comparisons below were regenerated and reviewed after the bounded date repair; Listing, Tour and Lightbox geometry/assets were preserved. The inline DevTools tooltips verify the exact local Arial/Helvetica/sans-serif stack and26pxH1/22pxpropertyH2 sizes and#222color. H1width603.84375 rounds to the supplied603.85; lineheight34matches. Other weight/spacing/rasterization differences remain unverified. The property H2's block width depends on viewport/column width and should not be confused with text width. The house is confirmed as the🏡 concept, but system emoji artwork differed; a stable original SVG now matches the screenshot's gray roof, pink details and garden within the measured box.
+
+See [interaction matrix](reference-audit/interaction-matrix.md) and [gaps](reference-audit/gap-analysis.md). Headed original access again returned429. Local tests pass without claiming reference equivalence. Fixed booking quote/cancellation content, unavailable-date semantics, secondary dialogs and29missing photo positions remain explicit gaps.
+
 ## Image-quality improvement pass
 
 Validation: lint/build passed; the existing17interaction checks and5new Lightbox quality groups passed. The latter traversed all14real photos, checked fixed canvas/control/title/counter rectangles, decoded every image, exercised both navigation methods and boundaries, and raster-checked the portrait fixture. The layout-shift observer reported approximately0.00259total input-driven text movement in the changing title/counter, with no non-input Lightbox CLS and no media/control rectangle changes. This distinction is deliberate; an absolute zero observed-shift claim would be incorrect.
@@ -53,7 +65,7 @@ The first comparison exposed a blank decorative Tour header and incorrect sleepi
 1. **High — missing gallery:** reference counter43; local dataset14. Only first group's three-photo order is verified. Other group layouts/order are assumptions;29 photos and complete Tour screenshots are unavailable. No invented filler is used.
 2. **Resolved for large property photos — image resolution:** the roughly222px category crops are no longer enlarged in Tour/Lightbox. All 14large property photographs use matched public 2560px media. Screenshot crops are retained for small UI placements/provenance. All31 retained WebP derivatives still match their original source rectangles;14 public JPEG hashes are checked separately.
 3. **Medium — typography:** Arial/system sans-serif is an approximation. Original family/weight files are not supplied. Some headings, line wrapping and weight differ; exact font fidelity is unverified.
-4. **Medium — icons/decorations:** brand, line icons and laurels are original approximations. Search uses a house emoji rather than the reference's illustrated house. Tag/chip emoji rendering differs by platform. No source SVG paths were copied.
+4. **Medium — icons/decorations:** brand, line icons, amenity icons and laurels are original approximations. Search uses a screenshot-matched original house SVG to avoid platform emoji variation. Tag/chip emoji rendering still differs by platform. No source SVG paths were copied.
 5. **Medium — map and host details:** map geometry/colors and decorations are reconstructed in CSS; small offsets remain. Actual screenshot co-host portraits are used where available; styling/raster detail varies.
 6. **Medium — peripheral interactions:** search, sharing, offer, amenities expansion, review expansion and messaging are not connected to services or unprovided content. Save toggles locally; calendar controls are local UI; Reserve goes to dates. These are outside the three primary-view scope.
 7. **Unverified — behavior fidelity:** hover, transition duration/easing, overlay scrolling, focus restoration, history and navigation boundaries have no reference recordings. Local behavior is implemented and tested, but not claimed identical to the reference.

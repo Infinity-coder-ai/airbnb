@@ -89,6 +89,20 @@ try {
       ),
     ),
   );
+  await check("listing section bar slides in and navigates sections", async () => {
+    const bar = page.locator(".sticky-section-bar");
+    assert.equal(await bar.getAttribute("aria-hidden"), "true");
+    await page.evaluate(() => scrollTo(0, 800));
+    await page.waitForTimeout(100);
+    assert.equal(await bar.getAttribute("aria-hidden"), null);
+    const box = await bar.boundingBox();
+    assert.equal(box.y, 0);
+    assert.equal(box.height, 80);
+    await capture("listing-sticky");
+    await bar.getByRole("button", { name: "Amenities", exact: true }).click();
+    await page.waitForTimeout(100);
+    assert(Math.abs((await page.locator("#amenities").boundingBox()).y - 80) <= 1);
+  });
   await page.evaluate(() => scrollTo(0, 300));
   await page
     .getByRole("button", { name: "Show all photos", exact: true })
@@ -110,19 +124,13 @@ try {
     },
   );
   await capture("tour-top");
-  measurements.tourChrome = await page
-    .locator(".tour-chrome")
-    .evaluate((element) => ({
-      text: element.innerText,
-      scrollTop: element.parentElement.scrollTop,
-      rectangle: element.getBoundingClientRect().toJSON(),
-      visibility: getComputedStyle(element).visibility,
-      children: [...element.children].map((child) => ({
-        text: child.innerText,
-        rectangle: child.getBoundingClientRect().toJSON(),
-        visibility: getComputedStyle(child).visibility,
-      })),
-    }));
+  await check("Photo Tour omits the Listing header and title", async () => {
+    assert.equal(await page.locator(".photo-tour .site-header").count(), 0);
+    assert.equal(await page.locator(".photo-tour .title-bar").count(), 0);
+    const toolbar = await page.locator(".tour-toolbar").boundingBox();
+    assert.equal(toolbar.y, 0);
+    assert.equal(toolbar.height, 72);
+  });
   measurements.tour = await page.locator("#group-living-1").boundingBox();
   await page.locator("#photo-living-01").click();
   await check("clicked photo maps to the correct Lightbox image", async () => {

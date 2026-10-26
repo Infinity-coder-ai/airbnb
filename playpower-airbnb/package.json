@@ -15,6 +15,12 @@
     "compare:reference": "node scripts/compare-reference.mjs",
     "audit:images": "node scripts/audit-image-quality.mjs",
     "verify:lightbox": "node scripts/verify-lightbox-quality.mjs",
+    "verify:booking": "node scripts/verify-booking-interactions.mjs",
+    "verify:amenities": "node scripts/verify-amenities-interactions.mjs",
+    "audit:reference": "node scripts/audit-reference-access.mjs",
+    "audit:local": "node scripts/audit-local-interactions.mjs",
+    "audit:gallery": "node scripts/audit-gallery-controls.mjs",
+    "audit:report": "node scripts/write-interaction-audit.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

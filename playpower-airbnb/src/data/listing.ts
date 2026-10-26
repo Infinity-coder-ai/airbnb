@@ -11,6 +11,98 @@ export const amenities = [
   ["alarm", "Carbon monoxide alarm"],
   ["alarm", "Smoke alarm"],
 ] as const;
+
+export const amenityGroups = [
+  {
+    title: "Bathroom",
+    items: [
+      ["clean", "Hairdryer"],
+      ["clean", "Cleaning products"],
+      ["bath", "Shampoo"],
+      ["bath", "Hot water"],
+      ["clean", "Shower gel"],
+    ],
+  },
+  {
+    title: "Bedroom and laundry",
+    items: [
+      ["clean", "Washing machine"],
+      ["outdoor", "Hangers"],
+      ["clean", "Bed linen"],
+      ["window", "Room-darkening blinds"],
+      ["clean", "Iron"],
+      ["desk", "Clothes storage"],
+      ["bed", "Cot"],
+    ],
+  },
+  { title: "Entertainment", items: [["tv", "TV"]] },
+  { title: "Family", items: [["bed", "Cot"]] },
+  {
+    title: "Heating and cooling",
+    items: [
+      ["snow", "Air conditioning"],
+      ["fan", "Ceiling fan"],
+    ],
+  },
+  {
+    title: "Home safety",
+    items: [
+      ["camera", "Exterior security cameras on property"],
+      ["alarm", "Carbon monoxide alarm"],
+      ["alarm", "Smoke alarm"],
+    ],
+  },
+  {
+    title: "Internet and office",
+    items: [
+      ["wifi", "Wifi"],
+      ["desk", "Dedicated workspace"],
+    ],
+  },
+  {
+    title: "Kitchen and dining",
+    items: [
+      ["kitchen", "Kitchen"],
+      ["kitchen", "Fridge"],
+      ["kitchen", "Freezer"],
+      ["kitchen", "Microwave"],
+      ["kitchen", "Cooking basics"],
+      ["kitchen", "Crockery and cutlery"],
+      ["kitchen", "Kettle"],
+      ["kitchen", "Coffee"],
+      ["kitchen", "Wine glasses"],
+      ["kitchen", "Toaster"],
+      ["kitchen", "Blender"],
+      ["kitchen", "Cooker"],
+    ],
+  },
+  { title: "Location features", items: [["door", "Private entrance"]] },
+  {
+    title: "Outdoor",
+    items: [
+      ["outdoor", "Patio or balcony"],
+      ["outdoor", "Outdoor dining area"],
+    ],
+  },
+  {
+    title: "Parking and facilities",
+    items: [
+      ["car", "Free parking on premises"],
+      ["pool", "Pool"],
+      ["bath", "Hot tub"],
+      ["gym", "Gym"],
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      ["paw", "Pets allowed"],
+      ["clean", "Cleaning available during stay"],
+      ["calendar", "Long-term stays allowed"],
+      ["door", "Self check-in"],
+    ],
+  },
+] as const;
 export const features = [
   [
     "outdoor",

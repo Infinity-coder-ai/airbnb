@@ -1,5 +1,15 @@
 # Accessibility and interaction verification
 
+## Amenities dialog and expandable content
+
+The amenities surface uses a native modal dialog named “What this place offers”. Opening focuses the labelled close button, makes the background noninteractive, locks body scroll and keeps its own content scrollable. Escape and the close button both restore the exact Show all50amenities opener and original Listing scroll. The description toggle exposes `aria-expanded`/`aria-controls`. Review highlights are a named, focusable horizontal region so keyboard users can reach and horizontally scroll the strip. Automated coverage is in [amenities report](../implementation-captures/amenities/report.json). No screen-reader announcement or cross-browser native-dialog audit has been performed.
+
+## 26 October dates and controls
+
+The shared date-range repair adds semantic labelled check-in/checkout buttons and a named calendar section. Reserve and date-field activation scroll to and focus the calendar heading without adding a URL hash. Reduced-motion and normal smooth-scrolling paths are tested. Selected endpoints use aria-pressed; the formatted date summary is a polite atomic live region. Native guest selection remains1–3. Both sleeping photo openers restore exact focus and scroll after Tour closes; Listing Save exposes its pressed state and red heart.
+
+All11 [booking regression checks](reference-audit/booking-regression.json), the17frontend checks and5Lightbox quality groups pass. Additional direct close/grid Lightbox clicks and the130-control inventory are in [gallery-controls.json](reference-audit/gallery-controls.json). This is local keyboard/semantics verification, not a screen-reader audit or proof of original behavior. Calendar day controls are ordinary Tab/Enter/Space buttons; a full ARIA-grid arrow-key datepicker was not invented. Availability/disabled dates and reference field popup structure remain unverified; see [gaps](reference-audit/gap-analysis.md).
+
 ## Sizing follow-up
 
 Existing keyboard/focus/scroll checks continue to pass after the quality update. All 14 photos were tested using next/previous buttons and arrow keys; fixed media/control bounds prevent focus targets from moving. Title and counter fields have stable geometry, and tabular counter numerals avoid digit-width shifts. Focus restoration and disabled-boundary handling remain unchanged.
